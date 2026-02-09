@@ -120,6 +120,7 @@
         display: block;
     }
 
+    /* Full Screen Overlay */
     .mobile-nav-overlay {
         display: flex;
         position: fixed;
@@ -127,12 +128,23 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(10, 25, 47, 0.98);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        background: var(--navy-deep);
+        /* Use solid color for better perf with clip-path */
         z-index: 1000;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
+    }
+
+    .mobile-nav-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        padding: 6rem 1rem 3rem 1rem;
+        width: 100%;
+        max-width: 400px;
     }
 
     .mobile-nav-links {
@@ -146,18 +158,62 @@
     }
 
     .mobile-nav-link {
-        font-size: 2rem;
+        font-size: 2.25rem;
         font-weight: 700;
         color: var(--text-secondary);
         text-decoration: none;
         transition: all 0.3s ease;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
         padding: 0.5rem;
     }
 
     .mobile-nav-link:hover,
     .mobile-nav-link.active {
-        color: var(--teal);
+        color: var(--off-white);
         transform: scale(1.05);
+    }
+
+    .active-indicator {
+        color: var(--teal);
+        transform: rotate(-45deg);
+        /* Arrow pointing up-right */
+    }
+
+    /* Mobile Socials Footer */
+    .mobile-socials {
+        margin-top: auto;
+        text-align: center;
+        padding-top: 3rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+    }
+
+    .mobile-socials p {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .social-links a {
+        color: var(--teal);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+        color: var(--off-white);
     }
 }

@@ -171,6 +171,14 @@
 
     .footer-legal {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1.5rem;
+        /* Increased for better touch targets */
+        margin-top: 1rem;
+    }
+
+    .footer-legal a {
+        padding: 0.5rem;
+        /* Larger touch area */
+        display: inline-block;
     }
 }
