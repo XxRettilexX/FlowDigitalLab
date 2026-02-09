@@ -1,0 +1,141 @@
+/* ========================================
+   SERVIZI PAGE STYLES
+   ======================================== */
+
+.servizi-page {
+    min-height: 100vh;
+}
+
+.servizi-hero {
+    padding: 10rem 0 6rem;
+    text-align: center;
+    background: radial-gradient(ellipse at top, rgba(100, 255, 218, 0.1) 0%, transparent 60%);
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    animation: fade-in-up 0.8s ease;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fade-in-up 0.8s ease 0.2s backwards;
+}
+
+.process-section {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(100, 255, 218, 0.03) 50%, transparent 100%);
+}
+
+.process-section .section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.process-section .section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.process-card {
+    position: relative;
+    padding: 2.5rem 2rem;
+    background: rgba(100, 255, 218, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.4s ease;
+    animation: fade-in-up 0.8s ease backwards;
+}
+
+.process-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.process-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.process-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.process-card:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+.process-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(100, 255, 218, 0.3);
+    background: rgba(100, 255, 218, 0.05);
+    box-shadow: 0 20px 40px rgba(100, 255, 218, 0.15);
+}
+
+.process-number {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.3;
+}
+
+.process-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-accent);
+    border-radius: 12px;
+    color: var(--navy-deep);
+    margin-bottom: 1.5rem;
+    transition: transform 0.4s ease;
+}
+
+.process-card:hover .process-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.process-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--off-white);
+    margin-bottom: 1rem;
+}
+
+.process-description {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .servizi-hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .process-section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}

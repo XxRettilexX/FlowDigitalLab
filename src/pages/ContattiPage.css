@@ -1,0 +1,229 @@
+/* ========================================
+   CONTATTI PAGE STYLES
+   ======================================== */
+
+.contatti-page {
+    min-height: 100vh;
+    padding-bottom: var(--spacing-xl);
+}
+
+.contatti-hero {
+    padding: 10rem 0 4rem;
+    text-align: center;
+    background: radial-gradient(ellipse at top, rgba(100, 255, 218, 0.1) 0%, transparent 60%);
+}
+
+.contatti-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* Contact Info */
+.info-title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--off-white);
+}
+
+.info-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(100, 255, 218, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.05);
+    transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+    background: rgba(100, 255, 218, 0.08);
+    border-color: rgba(100, 255, 218, 0.2);
+}
+
+.method-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(100, 255, 218, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--teal);
+}
+
+.method-content h3 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.method-content p,
+.method-content a {
+    font-size: 1.1rem;
+    color: var(--off-white);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.method-content a:hover {
+    color: var(--teal);
+    text-decoration: underline;
+}
+
+/* Business Hours */
+.business-hours {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.hours-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--teal);
+}
+
+.business-hours h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.business-hours p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.business-hours p:last-child {
+    margin-bottom: 0;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+    background: rgba(10, 25, 47, 0.5);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--off-white);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--off-white);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--teal);
+    background: rgba(100, 255, 218, 0.05);
+    box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.btn-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.form-feedback {
+    margin-bottom: 1.5rem;
+}
+
+.success-message {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(100, 255, 218, 0.1);
+    color: var(--teal);
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+}
+
+.error-message {
+    background: rgba(255, 99, 71, 0.1);
+    color: #ff6347;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 99, 71, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contatti-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-form-wrapper {
+        padding: 2rem 1.5rem;
+    }
+}

@@ -1,0 +1,206 @@
+/* ========================================
+   PROGETTI PAGE STYLES (Re-design)
+   ======================================== */
+
+.progetti-page {
+    min-height: 100vh;
+    padding-bottom: var(--spacing-xl);
+}
+
+.progetti-hero {
+    padding: 10rem 0 4rem;
+    text-align: center;
+    background: radial-gradient(ellipse at top, rgba(100, 255, 218, 0.1) 0%, transparent 60%);
+}
+
+.progetti-content {
+    padding-bottom: var(--spacing-xl);
+}
+
+/* GitHub Showcase Card */
+.github-showcase {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+.github-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 4rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.github-icon-wrapper {
+    color: var(--off-white);
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+}
+
+.github-card h2 {
+    font-size: 2rem;
+    color: var(--off-white);
+    margin: 0;
+}
+
+.github-card p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: #24292e;
+    /* GitHub Black */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.github-btn:hover {
+    background: #2b3137;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* What We Build Section */
+.what-we-build {
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.what-we-build .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.build-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.build-card {
+    background: rgba(100, 255, 218, 0.03);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.build-card:hover {
+    border-color: rgba(100, 255, 218, 0.3);
+    background: rgba(100, 255, 218, 0.06);
+}
+
+.build-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(100, 255, 218, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--teal);
+    margin-bottom: 1.5rem;
+}
+
+.build-card h3 {
+    font-size: 1.5rem;
+    color: var(--off-white);
+    margin-bottom: 1rem;
+}
+
+.build-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.coming-soon-content {
+    text-align: center;
+    padding: 3rem;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(162, 255, 0, 0.1);
+    color: var(--lime-green);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.coming-soon h3 {
+    font-size: 2rem;
+    color: var(--off-white);
+    margin-bottom: 1rem;
+}
+
+.coming-soon p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coming-soon .btn-secondary {
+    border-color: var(--text-secondary);
+    color: var(--off-white);
+}
+
+.coming-soon .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--off-white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .progetti-hero {
+        padding: 8rem 0 3rem;
+    }
+
+    .github-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .github-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .build-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coming-soon h3 {
+        font-size: 1.5rem;
+    }
+}

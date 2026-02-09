@@ -1,0 +1,166 @@
+/* ========================================
+   MANIFESTO SECTION STYLES
+   ======================================== */
+
+.manifesto {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    background: radial-gradient(ellipse at center, rgba(100, 255, 218, 0.03) 0%, var(--navy-deep) 70%);
+}
+
+.manifesto-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.manifesto-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: rgba(100, 255, 218, 0.1);
+    border: 2px solid rgba(100, 255, 218, 0.3);
+    border-radius: 50%;
+    color: var(--teal);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: fade-in-up 0.8s ease, pulse-glow 4s ease-in-out infinite;
+}
+
+.manifesto-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    animation: fade-in-up 0.8s ease 0.2s backwards;
+}
+
+.manifesto-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.manifesto-text p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    animation: fade-in-up 0.8s ease backwards;
+}
+
+.manifesto-text p:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.manifesto-text p:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.manifesto-text p:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.manifesto-text p:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.manifesto-text strong {
+    color: var(--off-white);
+    font-weight: 600;
+}
+
+.manifesto-cta-text {
+    font-size: 1.25rem !important;
+    color: var(--off-white) !important;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.manifesto-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+    animation: fade-in-up 0.8s ease 0.7s backwards;
+}
+
+.divider-line {
+    width: 100px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--teal), transparent);
+}
+
+.divider-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--teal);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--teal);
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.manifesto-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--off-white);
+    position: relative;
+    padding: 2rem;
+    background: rgba(100, 255, 218, 0.05);
+    border-left: 4px solid var(--teal);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: fade-in-up 0.8s ease 0.8s backwards;
+}
+
+.manifesto-quote::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 5rem;
+    color: var(--teal);
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .manifesto {
+        padding: var(--spacing-lg) 0;
+    }
+
+    .manifesto-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .manifesto-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .manifesto-text p {
+        font-size: 1rem;
+    }
+
+    .manifesto-cta-text {
+        font-size: 1.125rem !important;
+    }
+
+    .manifesto-quote {
+        font-size: 1.125rem;
+        padding: 1.5rem;
+    }
+
+    .divider-line {
+        width: 60px;
+    }
+}
