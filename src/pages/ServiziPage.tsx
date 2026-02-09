@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import Services from '../components/Services';
+import SEO from '../components/SEO';
 import { Code, Palette, TrendingUp, Zap } from 'lucide-react';
 import './ServiziPage.css';
 
@@ -36,6 +37,10 @@ const ServiziPage: React.FC<ServiziPageProps> = () => {
 
     return (
         <div className="servizi-page">
+            <SEO
+                title="Servizi di Web Design e Sviluppo"
+                description="Offriamo servizi professionali di Web Design, Sviluppo App, Branding e Strategie Digitali per far crescere il tuo business online."
+            />
             <section className="servizi-hero">
                 <div className="container">
                     <motion.h1

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Github, ExternalLink, Code2, Rocket } from 'lucide-react';
+import SEO from '../components/SEO';
 import './ProgettiPage.css';
 
 interface ProgettiPageProps { }
@@ -8,6 +9,10 @@ interface ProgettiPageProps { }
 const ProgettiPage: React.FC<ProgettiPageProps> = () => {
     return (
         <div className="progetti-page">
+            <SEO
+                title="Progetti e Open Source"
+                description="Esplora i nostri progetti open source su GitHub e scopri come costruiamo siti web e applicazioni moderne per i nostri clienti."
+            />
             <section className="progetti-hero">
                 <div className="container">
                     <motion.h1

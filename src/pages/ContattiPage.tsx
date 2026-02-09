@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { Mail, Instagram, MapPin, Send, Clock, Loader2, CheckCircle2 } from 'lucide-react';
+import SEO from '../components/SEO';
 import './ContattiPage.css';
 
 interface ContattiPageProps { }
@@ -98,6 +99,10 @@ const ContattiPage: React.FC<ContattiPageProps> = () => {
 
     return (
         <div className="contatti-page">
+            <SEO
+                title="Contattaci - Preventivo Gratuito"
+                description="Hai un progetto in mente? Contatta Flow Digital Lab per una consulenza gratuita su siti web, app e branding."
+            />
             <section className="contatti-hero">
                 <div className="container">
                     <motion.h1
