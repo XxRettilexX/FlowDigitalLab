@@ -1,5 +1,5 @@
 /* ========================================
-   NAVBAR STYLES - Glassmorphism Effect
+   NAVBAR STYLES - Modern Glassmorphism
    ======================================== */
 
 .navbar {
@@ -10,10 +10,10 @@
     z-index: 1000;
     padding: 1.5rem 0;
     transition: all 0.3s ease;
-    background: rgba(10, 25, 47, 0.3);
+    background: rgba(10, 25, 47, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+    border-bottom: 1px solid rgba(100, 255, 218, 0.05);
 }
 
 .navbar.scrolled {
@@ -28,6 +28,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1001;
 }
 
 .navbar-logo {
@@ -37,11 +39,8 @@
     font-size: 1.5rem;
     font-weight: 800;
     cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.navbar-logo:hover {
-    transform: scale(1.05);
+    z-index: 1002;
+    /* Above mobile menu */
 }
 
 .logo-subtitle {
@@ -50,19 +49,12 @@
     color: var(--text-secondary);
 }
 
-.navbar-links {
+/* Desktop Navigation */
+.desktop-nav {
     display: flex;
     list-style: none;
     gap: 2.5rem;
     align-items: center;
-}
-
-.desktop-nav {
-    display: flex;
-}
-
-.mobile-nav {
-    display: none;
 }
 
 .nav-link {
@@ -95,18 +87,27 @@
     width: 100%;
 }
 
+/* Mobile Menu Button */
 .mobile-menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: var(--off-white);
+    color: var(--teal);
     cursor: pointer;
     padding: 0.5rem;
-    transition: color 0.3s ease;
+    z-index: 1002;
+    /* Above mobile menu */
+    transition: transform 0.3s ease;
 }
 
-.mobile-menu-toggle:hover {
-    color: var(--teal);
+.mobile-menu-toggle:active {
+    transform: scale(0.9);
+}
+
+/* Mobile Navigation Overlay */
+.mobile-nav-overlay {
+    display: none;
+    /* Hidden by default on desktop */
 }
 
 /* Responsive Design */
@@ -119,24 +120,44 @@
         display: block;
     }
 
-    .mobile-nav {
+    .mobile-nav-overlay {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 0;
         left: 0;
-        right: 0;
+        width: 100vw;
+        height: 100vh;
         background: rgba(10, 25, 47, 0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-        padding: 2rem;
-        gap: 1.5rem;
-        border-bottom: 1px solid rgba(100, 255, 218, 0.2);
-        animation: fade-in-up 0.3s ease;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
     }
 
-    .mobile-nav .nav-link {
-        font-size: 1.25rem;
-        padding: 0.75rem 0;
+    .mobile-nav-links {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .mobile-nav-link {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .mobile-nav-link:hover,
+    .mobile-nav-link.active {
+        color: var(--teal);
+        transform: scale(1.05);
     }
 }
