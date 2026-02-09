@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import ServiziPage from './pages/ServiziPage';
 import ProgettiPage from './pages/ProgettiPage';
@@ -14,6 +15,7 @@ interface AppProps { }
 const App: React.FC<AppProps> = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <Navbar />
         <main className="main-content">
