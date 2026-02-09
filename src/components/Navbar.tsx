@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 import './Navbar.css';
 
-interface NavbarProps {}
+interface NavbarProps { }
 
 const Navbar: React.FC<NavbarProps> = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -19,6 +20,15 @@ const Navbar: React.FC<NavbarProps> = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isMobileMenuOpen]);
+
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Servizi', path: '/servizi' },
@@ -27,9 +37,14 @@ const Navbar: React.FC<NavbarProps> = () => {
   ];
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+    <motion.nav
+      className={`navbar ${isScrolled ? 'scrolled' : ''}`}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="container navbar-content">
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={() => setIsMobileMenuOpen(false)}>
           <span className="gradient-text">Flow</span>
           <span className="logo-subtitle">Digital Lab</span>
         </Link>
@@ -54,27 +69,42 @@ const Navbar: React.FC<NavbarProps> = () => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <ul className="navbar-links mobile-nav">
-            {navLinks.map((link) => (
-              <li key={link.path}>
-                <Link
-                  to={link.path}
-                  className={`nav-link ${location.pathname === link.path ? 'active' : ''}`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+        {/* Mobile Navigation Overlay */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              className="mobile-nav-overlay"
+              initial={{ opacity: 0, x: '100%' }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: '100%' }}
+              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            >
+              <ul className="mobile-nav-links">
+                {navLinks.map((link, index) => (
+                  <motion.li
+                    key={link.path}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + index * 0.1 }}
+                  >
+                    <Link
+                      to={link.path}
+                      className={`mobile-nav-link ${location.pathname === link.path ? 'active' : ''}`}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
