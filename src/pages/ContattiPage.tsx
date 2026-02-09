@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import { Mail, Instagram, MapPin, Send, Clock, Loader2, CheckCircle2 } from 'lucide-react';
 import './ContattiPage.css';
 
@@ -15,7 +16,8 @@ const ContattiPage: React.FC<ContattiPageProps> = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
+        privacy: false
     });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -25,11 +27,24 @@ const ContattiPage: React.FC<ContattiPageProps> = () => {
         });
     };
 
+    const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormData({
+            ...formData,
+            privacy: e.target.checked
+        });
+    };
+
     /**
      * Submits the form data to the Vercel API endpoint.
      */
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (!formData.privacy) {
+            alert('Devi accettare la Privacy Policy per inviare il messaggio.');
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus('idle');
 
@@ -44,7 +59,7 @@ const ContattiPage: React.FC<ContattiPageProps> = () => {
 
             if (response.ok) {
                 setSubmitStatus('success');
-                setFormData({ name: '', email: '', message: '' }); // Clear form
+                setFormData({ name: '', email: '', message: '', privacy: false }); // Clear form
                 setTimeout(() => setSubmitStatus('idle'), 5000); // Reset status after 5s
             } else {
                 const errorData = await response.json();
@@ -234,6 +249,27 @@ const ContattiPage: React.FC<ContattiPageProps> = () => {
                                         rows={6}
                                         placeholder="Raccontaci del tuo progetto..."
                                     ></textarea>
+                                </motion.div>
+
+                                <motion.div
+                                    className="form-group checkbox-group"
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: 0.55 }}
+                                >
+                                    <label className="checkbox-label">
+                                        <input
+                                            type="checkbox"
+                                            name="privacy"
+                                            checked={formData.privacy}
+                                            onChange={handleCheckboxChange}
+                                            required
+                                        />
+                                        <span>
+                                            Ho letto e accetto la <Link to="/privacy" className="link-highlight">Privacy Policy</Link>
+                                        </span>
+                                    </label>
                                 </motion.div>
 
                                 <div className="form-feedback">
