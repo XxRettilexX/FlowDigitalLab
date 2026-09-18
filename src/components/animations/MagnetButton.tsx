@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useRef, useState } from 'react';
-import { motion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 
 interface MagnetButtonProps {
     children: React.ReactNode;
@@ -16,9 +18,10 @@ const MagnetButton: React.FC<MagnetButtonProps> = ({
 }) => {
     const buttonRef = useRef<HTMLButtonElement>(null);
     const [position, setPosition] = useState({ x: 0, y: 0 });
+    const shouldReduceMotion = useReducedMotion();
 
     const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
-        if (!buttonRef.current) return;
+        if (shouldReduceMotion || !buttonRef.current) return;
         const rect = buttonRef.current.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
         const centerY = rect.top + rect.height / 2;

@@ -1,6 +1,7 @@
+'use client';
+
 import React, { useState, useRef, type ReactNode } from 'react';
-import { motion } from 'motion/react';
-import './SpotlightCard.css';
+import { motion, useReducedMotion } from 'motion/react';
 
 interface SpotlightCardProps {
     children: ReactNode;
@@ -11,11 +12,12 @@ interface SpotlightCardProps {
 const SpotlightCard: React.FC<SpotlightCardProps> = ({
     children,
     className = '',
-    spotlightColor = 'rgba(100, 255, 218, 0.15)'
+    spotlightColor = 'rgba(42, 92, 255, 0.12)'
 }) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovered, setIsHovered] = useState(false);
+    const shouldReduceMotion = useReducedMotion();
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         if (!containerRef.current) return;
@@ -33,13 +35,13 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
             onMouseMove={handleMouseMove}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            initial={{ opacity: 0, y: 30 }}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            whileHover={{
-                y: -10,
-                transition: { duration: 0.3 }
+            transition={{ duration: 0.3, ease: 'easeOut' }}
+            whileHover={shouldReduceMotion ? undefined : {
+                y: -6,
+                transition: { duration: 0.2 }
             }}
         >
             <div
@@ -53,7 +55,7 @@ const SpotlightCard: React.FC<SpotlightCardProps> = ({
             />
             <div className="spotlight-border" style={{
                 background: isHovered
-                    ? `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, var(--teal) 0%, transparent 50%)`
+                    ? `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, var(--color-accent) 0%, transparent 50%)`
                     : 'none',
                 opacity: isHovered ? 0.5 : 0
             }} />

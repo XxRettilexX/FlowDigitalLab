@@ -1,68 +1,77 @@
 import React from 'react';
-import { Mail, MapPin, Instagram, Linkedin, Github } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import './Footer.css';
+import { Mail, MapPin, Instagram, Linkedin, Github, MessageCircle } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 interface FooterProps { }
 
 const Footer: React.FC<FooterProps> = () => {
     const currentYear = new Date().getFullYear();
+    const t = useTranslations('footer');
+    const tCommon = useTranslations('common');
 
     return (
         <footer className="footer">
             <div className="container">
                 <div className="footer-content">
-                    {/* Brand Column */}
                     <div className="footer-column">
                         <div className="footer-logo">
                             <span className="gradient-text">Flow</span>
                             <span className="logo-subtitle">Digital Lab</span>
                         </div>
-                        <p className="footer-tagline">
-                            Trasformiamo visioni in flussi digitali che convertono.
-                        </p>
+                        <p className="footer-tagline">{t('tagline')}</p>
                         <div className="footer-social">
-                            <a href="https://instagram.com/flow_digital.lab" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <a href="https://instagram.com/flow_digital.lab" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                                 <Instagram size={20} />
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                                 <Github size={20} />
                             </a>
                         </div>
                     </div>
 
-                    {/* Links Column */}
                     <div className="footer-column">
-                        <h4 className="footer-heading">Navigazione</h4>
+                        <h4 className="footer-heading">{t('navHeading')}</h4>
                         <ul className="footer-links">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/servizi">Servizi</Link></li>
-                            <li><Link to="/progetti">Progetti</Link></li>
-                            <li><Link to="/contatti">Contatti</Link></li>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/servizi">Servizi</Link></li>
+                            <li><Link href="/progetti">Progetti</Link></li>
+                            <li><Link href="/blog">Blog</Link></li>
+                            <li><Link href="/contatti">Contatti</Link></li>
                         </ul>
                     </div>
 
-                    {/* Services Column */}
                     <div className="footer-column">
-                        <h4 className="footer-heading">Servizi</h4>
+                        <h4 className="footer-heading">{t('servicesHeading')}</h4>
                         <ul className="footer-links">
-                            <li><Link to="/servizi">Web Design</Link></li>
-                            <li><Link to="/servizi">Branding</Link></li>
-                            <li><Link to="/servizi">Digital Strategy</Link></li>
-                            <li><Link to="/servizi">SEO & Marketing</Link></li>
+                            <li><Link href="/servizi">Web Design</Link></li>
+                            <li><Link href="/servizi">Branding</Link></li>
+                            <li><Link href="/servizi">Digital Strategy</Link></li>
+                            <li><Link href="/servizi">SEO & Marketing</Link></li>
                         </ul>
                     </div>
 
-                    {/* Contact Column */}
                     <div className="footer-column">
-                        <h4 className="footer-heading">Contatti</h4>
+                        <h4 className="footer-heading">{t('contactHeading')}</h4>
                         <ul className="footer-contact">
                             <li>
                                 <Mail size={16} />
                                 <a href="mailto:info@flowdigitallab.it">info@flowdigitallab.it</a>
+                            </li>
+                            <li>
+                                <MessageCircle size={16} />
+                                <a
+                                    href={`https://wa.me/393273315926?text=${encodeURIComponent(tCommon('whatsappMessage'))}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="footer-whatsapp"
+                                    aria-label={tCommon('whatsappCta')}
+                                >
+                                    WhatsApp
+                                </a>
                             </li>
                             <li>
                                 <Instagram size={16} />
@@ -70,7 +79,7 @@ const Footer: React.FC<FooterProps> = () => {
                             </li>
                             <li>
                                 <MapPin size={16} />
-                                <span>Italia</span>
+                                <span>{t('location')}</span>
                             </li>
                         </ul>
                     </div>
@@ -79,10 +88,10 @@ const Footer: React.FC<FooterProps> = () => {
                 <div className="footer-divider"></div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {currentYear} Flow Digital Lab. Tutti i diritti riservati.</p>
+                    <p>&copy; {currentYear} Flow Digital Lab. {t('rights')}</p>
                     <div className="footer-legal">
-                        <Link to="/privacy">Privacy Policy</Link>
-                        <Link to="/terms">Termini & Condizioni</Link>
+                        <Link href="/privacy">{t('privacy')}</Link>
+                        <Link href="/terms">{t('terms')}</Link>
                     </div>
                 </div>
             </div>

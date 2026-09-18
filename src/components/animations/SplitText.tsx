@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
@@ -25,6 +27,11 @@ const SplitText: React.FC<SplitTextProps> = ({
         if (!container) return;
 
         const chars = container.querySelectorAll('.split-char');
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            gsap.set(chars, { y: 0, opacity: 1, scale: 1, rotation: 0, rotationX: 0 });
+            return;
+        }
 
         const getAnimationProps = () => {
             switch (animation) {

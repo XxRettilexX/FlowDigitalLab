@@ -1,0 +1,312 @@
+{
+  "common": {
+    "whatsappCta": "Chat with us on WhatsApp",
+    "whatsappMessage": "Hi, I'd like some information about...",
+    "readMore": "Read more",
+    "allCategory": "All"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggleLabel": "Toggle theme"
+  },
+  "language": {
+    "switchLabel": "Switch language",
+    "it": "Italian",
+    "en": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "servizi": "Services",
+    "progetti": "Projects",
+    "blog": "Blog",
+    "contatti": "Contact",
+    "contactCta": "Contact us"
+  },
+  "hero": {
+    "badge": "New Digital Energy",
+    "titleLine1": "We turn your vision",
+    "titleAccent": "Flow",
+    "titleLine2Full": "into a Digital Flow.",
+    "subtitle": "Web Design, Branding and high-conversion strategy for businesses that refuse to stand still.",
+    "ctaPrimary": "Start Your Project",
+    "ctaSecondary": "See Our Work",
+    "statIdeas": "Fresh Ideas",
+    "statCustom": "Tailor-made",
+    "statFast": "Fast Delivery",
+    "statFastLabel": "Fast"
+  },
+  "services": {
+    "heading": "Our",
+    "headingAccent": "Services",
+    "subtitle": "Complete solutions to take your business to the next level.",
+    "items": [
+      {
+        "title": "Web Design",
+        "description": "Modern, high-performing websites optimised for conversion.",
+        "features": ["Responsive Design", "Optimised Performance", "SEO Ready", "WCAG Accessibility"]
+      },
+      {
+        "title": "Branding",
+        "description": "Visual identities that tell your story and set you apart.",
+        "features": ["Logo Design", "Brand Guidelines", "Visual Identity", "Marketing Materials"]
+      },
+      {
+        "title": "Strategy",
+        "description": "Data-driven digital strategy to maximise ROI.",
+        "features": ["Digital Marketing", "Content Strategy", "Analytics & Insights", "Growth Hacking"]
+      }
+    ]
+  },
+  "manifesto": {
+    "heading": "The Flow",
+    "headingAccent": "Philosophy",
+    "p1Plain": "In the digital world, like water,",
+    "p1Bold": "movement is life",
+    "p1End": ". We don't believe in static websites or rigid strategies.",
+    "p2Plain": "We believe in the",
+    "p2Accent": "continuous flow",
+    "p2End": "of innovation, in constant adaptation, in organic growth.",
+    "p3Plain": "Every project is a",
+    "p3Bold": "living ecosystem",
+    "p3Mid": "that breathes, evolves and adapts to the market. Your digital presence isn't a finished product, but a",
+    "p3Accent": "flow in continuous transformation",
+    "p3End": ".",
+    "ctaText": "Ready to let your business flow towards new horizons?",
+    "quote": "Digital doesn't wait. Either you flow, or you stagnate."
+  },
+  "footer": {
+    "tagline": "We turn visions into digital flows that convert.",
+    "navHeading": "Navigation",
+    "servicesHeading": "Services",
+    "contactHeading": "Contact",
+    "location": "Italy",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
+  "home": {
+    "seoTitle": "Web Agency, Design & Strategic Development",
+    "seoDescription": "Digital agency specialising in Web Design, App Development and Branding Strategy. We turn your vision into digital reality with innovative solutions."
+  },
+  "serviziPage": {
+    "seoTitle": "Web Design and Development Services",
+    "seoDescription": "We offer professional Web Design, App Development, Branding and Digital Strategy services to grow your business online.",
+    "title": "Our",
+    "titleAccent": "Services",
+    "subtitle": "Complete digital solutions to grow your business",
+    "processHeading": "Our",
+    "processHeadingAccent": "Process",
+    "processSubtitle": "A structured approach to exceptional results",
+    "steps": [
+      { "title": "Discovery", "description": "We analyse your business, your goals and your target market." },
+      { "title": "Design & Development", "description": "We build tailor-made solutions with cutting-edge technology." },
+      { "title": "Testing & Optimization", "description": "We test, optimise and refine every single detail." },
+      { "title": "Launch & Growth", "description": "We launch the project and support its continuous growth." }
+    ]
+  },
+  "progettiPage": {
+    "seoTitle": "Projects and Portfolio",
+    "seoDescription": "Explore our portfolio and open-source projects on GitHub: websites, web apps and digital strategy for our clients.",
+    "title": "Our",
+    "titleAccent": "Projects",
+    "subtitle": "A sample of our work, filterable by category",
+    "filters": {
+      "all": "All",
+      "web-design": "Web Design",
+      "branding": "Branding",
+      "ecommerce": "E-commerce",
+      "strategy": "Strategy"
+    },
+    "projects": [
+      { "title": "Nova Studio", "category": "web-design", "description": "Showcase website for an architecture studio, built around a photographic portfolio." },
+      { "title": "Radice Bio", "category": "branding", "description": "Full visual identity for a natural cosmetics brand." },
+      { "title": "Mercato Locale", "category": "ecommerce", "description": "Headless e-commerce for a network of local farmers." },
+      { "title": "Orbita Consulting", "category": "strategy", "description": "Digital strategy and content plan for a B2B consulting firm." },
+      { "title": "Lumen Interiors", "category": "web-design", "description": "High-conversion landing page for an interior design studio." },
+      { "title": "Verde Collettivo", "category": "branding", "description": "Rebranding and brand guidelines for an environmental services cooperative." }
+    ],
+    "portfolioHeading": "Our",
+    "portfolioHeadingAccent": "Portfolio",
+    "githubHeading": "Explore our projects on GitHub",
+    "githubText": "We believe in open source and code transparency. All our public projects are available on GitHub to inspire and collaborate.",
+    "githubCta": "Visit our GitHub",
+    "buildHeading": "What We",
+    "buildHeadingAccent": "Build",
+    "build": [
+      { "title": "Websites", "description": "Landing pages, portfolios and company websites with modern design and optimised performance." },
+      { "title": "Web Apps", "description": "Interactive web applications built with React, TypeScript and the latest technology." },
+      { "title": "Open Source", "description": "Components, templates and tools that we share with the community." }
+    ],
+    "comingSoonBadge": "Work in Progress",
+    "comingSoonTitle": "New projects coming soon",
+    "comingSoonText": "We're working on exciting projects that will be available soon. Follow us on Instagram to stay updated!",
+    "comingSoonCta": "Follow us on Instagram"
+  },
+  "contattiPage": {
+    "seoTitle": "Contact Us - Free Quote",
+    "seoDescription": "Have a project in mind? Contact Flow Digital Lab for a free consultation on websites, apps and branding.",
+    "title": "Contact Us",
+    "subtitle": "Ready to turn your vision into digital reality?",
+    "infoTitle": "Let's talk about your project",
+    "infoDescription": "Have an idea, a project, or simply want to know more? We're here to listen and find the perfect solution for you.",
+    "methods": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "location": "Location",
+      "locationValue": "Italy - We work remotely"
+    },
+    "hoursTitle": "Business Hours",
+    "hours": ["Mon - Fri: 9:00 - 18:00", "Saturday: By appointment", "Sunday: Closed"],
+    "form": {
+      "nameLabel": "Full Name *",
+      "namePlaceholder": "John Smith",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "john@example.com",
+      "messageLabel": "Message *",
+      "messagePlaceholder": "Tell us about your project...",
+      "privacyLabelPrefix": "I have read and accept the",
+      "privacyLabelLink": "Privacy Policy",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "Something went wrong. Try again or message us on Instagram.",
+      "validation": {
+        "nameMin": "Name must be at least 2 characters.",
+        "emailInvalid": "Please enter a valid email address.",
+        "messageMin": "Message must be at least 10 characters.",
+        "privacyRequired": "You must accept the Privacy Policy to send the message."
+      }
+    }
+  },
+  "blog": {
+    "seoTitle": "Blog - Guides and Insights",
+    "seoDescription": "Articles on web design, branding and digital strategy by Flow Digital Lab.",
+    "title": "Our",
+    "titleAccent": "Blog",
+    "subtitle": "Guides, insights and thoughts on design and digital strategy.",
+    "readMore": "Read the article",
+    "minRead": "min read",
+    "backToBlog": "Back to Blog",
+    "publishedOn": "Published on",
+    "emptyState": "No articles available yet. Check back soon!"
+  },
+  "legal": {
+    "privacy": {
+      "seoTitle": "Privacy Policy",
+      "title": "Privacy",
+      "titleAccent": "Policy",
+      "subtitle": "Your privacy matters to us. Here's how we handle your data.",
+      "updated": "Last updated: February 2026",
+      "sections": [
+        {
+          "heading": "1. Data Collection",
+          "body": "Flow Digital Lab collects the following personal data when you use our website:",
+          "list": [
+            "**Contact data:** Name, email and message when you fill in the contact form.",
+            "**Browsing data:** IP address, browser, device and pages visited via technical cookies.",
+            "**Voluntary data:** Any additional information you choose to share with us."
+          ]
+        },
+        {
+          "heading": "2. Use of Data",
+          "body": "Your data is used exclusively to:",
+          "list": [
+            "Respond to your contact and quote requests.",
+            "Improve the browsing experience on our website.",
+            "Send you communications about our services (only with your consent).",
+            "Comply with legal and tax obligations."
+          ],
+          "footer": "**We do not sell or share your data with third parties** for commercial purposes."
+        },
+        {
+          "heading": "3. Data Security",
+          "body": "We adopt technical and organisational security measures to protect your personal data:",
+          "list": [
+            "Secure HTTPS connection for all communications.",
+            "Access to data restricted to authorised personnel only.",
+            "Regular backups and up-to-date protection systems."
+          ]
+        },
+        {
+          "heading": "4. Your Rights",
+          "body": "Under the GDPR (EU Regulation 2016/679), you have the right to:",
+          "list": [
+            "**Access:** Request a copy of your personal data.",
+            "**Rectification:** Correct inaccurate or incomplete data.",
+            "**Erasure:** Request deletion of your data (\"right to be forgotten\").",
+            "**Portability:** Receive your data in a structured format.",
+            "**Objection:** Object to the processing of your data for specific purposes."
+          ]
+        },
+        {
+          "heading": "5. Contact",
+          "body": "For any question about our Privacy Policy or to exercise your rights, contact us:",
+          "contactBox": true
+        }
+      ]
+    },
+    "terms": {
+      "seoTitle": "Terms & Conditions",
+      "title": "Terms &",
+      "titleAccent": "Conditions",
+      "subtitle": "Please read carefully the terms governing the use of our services.",
+      "updated": "Last updated: February 2026",
+      "sections": [
+        {
+          "heading": "1. Acceptance of Terms",
+          "body": "By using the Flow Digital Lab website and our services, you agree to be bound by these Terms & Conditions. If you do not accept these terms, please do not use our services.",
+          "footer": "We reserve the right to change these terms at any time. Changes take effect from the date they are published on the site."
+        },
+        {
+          "heading": "2. Description of Services",
+          "body": "Flow Digital Lab offers the following services:",
+          "list": [
+            "**Web Design & Development:** Design and development of custom websites.",
+            "**Branding:** Creation of visual identities, logos and brand guidelines.",
+            "**Digital Strategy:** Strategic consulting, SEO and digital marketing."
+          ],
+          "footer": "The specific details of each project are defined in a separate quote, which forms an integral part of the contract."
+        },
+        {
+          "heading": "3. Payments and Billing",
+          "body": "Payment terms are as follows:",
+          "list": [
+            "**Deposit:** 50% of the total amount is due at the start of the project.",
+            "**Balance:** The remaining 50% is due on delivery of the project.",
+            "**Methods:** Bank transfer, PayPal or credit card.",
+            "**Invoicing:** An electronic invoice is issued for each payment."
+          ],
+          "footer": "Prices are to be understood as excluding VAT, unless otherwise stated."
+        },
+        {
+          "heading": "4. Revisions and Changes",
+          "body": "The quote includes a specific number of revision rounds (usually 2-3). Additional revisions beyond those included will be quoted separately.",
+          "footer": "Substantial changes to the project scope after initial approval may result in additional costs and changes to delivery times."
+        },
+        {
+          "heading": "5. Intellectual Property",
+          "body": "**Before final payment:** All materials produced remain the property of Flow Digital Lab.",
+          "footer": "**After final payment:** The client acquires full ownership of all agreed deliverables, including source files, graphics and code. Flow Digital Lab reserves the right to showcase completed work in its own portfolio, unless specific non-disclosure agreements (NDA) apply."
+        },
+        {
+          "heading": "6. Limitation of Liability",
+          "body": "Flow Digital Lab is not liable for:",
+          "list": [
+            "Indirect, incidental or consequential damages arising from the use of our services.",
+            "Issues caused by third-party services (hosting, domain, etc.).",
+            "Delays due to lack of collaboration or late feedback from the client."
+          ],
+          "footer": "Our maximum liability is limited to the total amount paid for the project."
+        },
+        {
+          "heading": "7. Governing Law",
+          "body": "These Terms & Conditions are governed by Italian law. Any dispute shall be subject to the jurisdiction of the court where Flow Digital Lab is domiciled.",
+          "contactBox": true
+        }
+      ]
+    },
+    "contactBoxEmailLabel": "Email",
+    "contactBoxInstagramLabel": "Instagram"
+  }
+}
