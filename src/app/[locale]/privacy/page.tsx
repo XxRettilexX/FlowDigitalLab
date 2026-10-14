@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Shield, Lock, Eye, Database, UserCheck, Mail } from 'lucide-react';
 import { renderBold } from '@/lib/renderBold';
@@ -18,7 +19,7 @@ const ICONS = [
 export async function generateMetadata({ params }: PrivacyPageProps): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'legal.privacy' });
-    return { title: t('seoTitle') };
+    return buildMetadata({ locale, path: '/privacy', title: t('seoTitle') });
 }
 
 export default async function PrivacyPage({ params }: PrivacyPageProps) {

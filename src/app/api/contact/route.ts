@@ -50,13 +50,13 @@ export async function POST(request: Request) {
             replyTo: email,
             subject: `Nuovo messaggio da ${name} - Flow Digital Lab`,
             html: `
-        <div style="font-family: Arial, sans-serif; padding: 20px; color: #0B1220;">
-          <h2 style="color: #2A5CFF;">Nuovo contatto dal sito web</h2>
+        <div style="font-family: Arial, sans-serif; padding: 20px; color: #1A1612;">
+          <h2 style="color: #0E4370;">Nuovo contatto dal sito web</h2>
           <p><strong>Nome:</strong> ${escapeHtml(name)}</p>
           <p><strong>Email:</strong> ${escapeHtml(email)}</p>
           <hr style="border: 1px solid #eee; margin: 20px 0;" />
           <h3>Messaggio:</h3>
-          <p style="white-space: pre-wrap; background: #F7F8FA; padding: 15px; border-radius: 6px;">${escapeHtml(message)}</p>
+          <p style="white-space: pre-wrap; background: #F4F1EA; padding: 15px; border-radius: 6px;">${escapeHtml(message)}</p>
         </div>
       `,
         });
@@ -66,9 +66,9 @@ export async function POST(request: Request) {
             to: email,
             subject: 'Grazie per averci contattato! - Flow Digital Lab',
             html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 32px; background-color: #0B1220; color: #F3F5F8; border-radius: 10px;">
-          <h1 style="color: #7C9EFF; margin: 0 0 24px;">Flow Digital Lab</h1>
-          <p style="font-size: 16px; line-height: 1.6; color: #A7AFBE;">
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 32px; background-color: #1A1612; color: #F4F1EA; border-radius: 10px;">
+          <h1 style="color: #7FC4C0; margin: 0 0 24px;">Flow Digital Lab</h1>
+          <p style="font-size: 16px; line-height: 1.6; color: #B5ADA0;">
             Ciao ${escapeHtml(name)}, grazie per averci scritto! Il nostro team ti risponderà entro 24-48 ore lavorative.
           </p>
         </div>

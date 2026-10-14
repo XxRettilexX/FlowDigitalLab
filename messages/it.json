@@ -24,59 +24,72 @@
     "contactCta": "Contattaci"
   },
   "hero": {
-    "badge": "Nuova Energia Digitale",
-    "titleLine1": "Trasformiamo la tua visione",
-    "titleAccent": "Flusso",
-    "titleLine2Full": "in un Flusso Digitale.",
-    "subtitle": "Web Design, Branding e Strategie ad alta conversione per business che non vogliono stare fermi.",
-    "ctaPrimary": "Inizia il Progetto",
-    "ctaSecondary": "Scopri i Progetti",
-    "statIdeas": "Idee Fresche",
-    "statCustom": "Su Misura",
-    "statFast": "Consegna Rapida",
-    "statFastLabel": "Fast"
+    "badge": "Web agency per PMI italiane",
+    "titleLine1": "Siti web e brand che portano",
+    "titleAccent": "clienti",
+    "titleLine2Full": "clienti alla tua attività.",
+    "subtitle": "Progettiamo e sviluppiamo il tuo sito, la tua identità visiva e la strategia per farti trovare online. Rispondiamo entro 24 ore.",
+    "ctaPrimary": "Richiedi un preventivo gratuito",
+    "ctaSecondary": "Vedi i servizi",
+    "stats": [
+      {
+        "value": "24 h",
+        "label": "Per rispondere alla tua richiesta"
+      },
+      {
+        "value": "2",
+        "label": "Round di revisioni sul design"
+      },
+      {
+        "value": "Italia",
+        "label": "Lavoriamo da remoto"
+      }
+    ]
   },
   "services": {
-    "heading": "I Nostri",
-    "headingAccent": "Servizi",
-    "subtitle": "Soluzioni complete per portare il tuo business al livello successivo.",
+    "heading": "Cosa",
+    "headingAccent": "facciamo",
+    "subtitle": "Tre servizi. Per ognuno trovi cosa ricevi.",
     "items": [
       {
-        "title": "Web Design",
-        "description": "Siti web moderni, performanti e ottimizzati per la conversione.",
-        "features": ["Design Responsivo", "Performance Ottimizzate", "SEO Ready", "Accessibilità WCAG"]
+        "title": "Siti web",
+        "description": "Sito vetrina o e-commerce in Next.js, veloce da mobile, con SEO di base e accessibilità curata. Lo consegniamo online, con analytics configurato.",
+        "features": [
+          "Design su misura",
+          "Sviluppo in Next.js",
+          "SEO tecnica",
+          "Formazione all'uso"
+        ]
       },
       {
-        "title": "Branding",
-        "description": "Identità visive che raccontano la tua storia e ti distinguono.",
-        "features": ["Logo Design", "Brand Guidelines", "Visual Identity", "Marketing Materials"]
+        "title": "Brand identity",
+        "description": "Logo, palette, tipografia e un manuale d'uso di poche pagine, così ogni materiale sembra fatto dalla stessa mano.",
+        "features": [
+          "Logo",
+          "Palette e tipografia",
+          "Manuale d'uso"
+        ]
       },
       {
-        "title": "Strategy",
-        "description": "Strategie digitali data-driven per massimizzare il ROI.",
-        "features": ["Digital Marketing", "Content Strategy", "Analytics & Insights", "Growth Hacking"]
+        "title": "Strategia digitale",
+        "description": "Un piano su misura: quali canali usare, cosa pubblicare, cosa misurare.",
+        "features": [
+          "Analisi dei canali",
+          "Piano editoriale",
+          "Analytics e KPI"
+        ]
       }
     ]
   },
   "manifesto": {
-    "heading": "La Filosofia",
-    "headingAccent": "Flow",
-    "p1Plain": "Nel digitale, come nell'acqua,",
-    "p1Bold": "il movimento è vita",
-    "p1End": ". Non crediamo nei siti statici o nelle strategie rigide.",
-    "p2Plain": "Crediamo nel",
-    "p2Accent": "flusso continuo",
-    "p2End": "di innovazione, nell'adattamento costante, nella crescita organica.",
-    "p3Plain": "Ogni progetto è un",
-    "p3Bold": "ecosistema vivo",
-    "p3Mid": "che respira, si evolve e si adatta al mercato. La tua presenza digitale non è un prodotto finito, ma un",
-    "p3Accent": "flusso in continua trasformazione",
-    "p3End": ".",
-    "ctaText": "Sei pronto a far scorrere il tuo business verso nuovi orizzonti?",
-    "quote": "Il digitale non aspetta. O fluisci, o ristagni."
+    "heading": "Dopo il lancio",
+    "headingAccent": "il lavoro continua",
+    "text": "Un sito non finisce al lancio. Dopo il go-live lo misuriamo, lo correggiamo e lo aggiorniamo con te, perché i clienti e il mercato cambiano. Per questo lavoriamo a fasi brevi e ti mostriamo i risultati a ogni passo.",
+    "ctaText": "Hai un progetto? Raccontacelo in 2 minuti.",
+    "ctaButton": "Scrivici"
   },
   "footer": {
-    "tagline": "Trasformiamo visioni in flussi digitali che convertono.",
+    "tagline": "Siti web, brand e strategia digitale per PMI italiane.",
     "navHeading": "Navigazione",
     "servicesHeading": "Servizi",
     "contactHeading": "Contatti",
@@ -86,78 +99,95 @@
     "terms": "Termini & Condizioni"
   },
   "home": {
-    "seoTitle": "Web Agency, Design & Sviluppo Strategico",
-    "seoDescription": "Agenzia digitale specializzata in Web Design, Sviluppo App e Strategie di Branding. Trasformiamo la tua visione in realtà digitale con soluzioni innovative."
+    "seoTitle": "Web agency per PMI: siti web, brand e strategia",
+    "seoDescription": "Flow Digital Lab progetta siti web, brand identity e strategie digitali per PMI italiane. Preventivo gratuito, risposta entro 24 ore."
   },
   "serviziPage": {
-    "seoTitle": "Servizi di Web Design e Sviluppo",
-    "seoDescription": "Offriamo servizi professionali di Web Design, Sviluppo App, Branding e Strategie Digitali per far crescere il tuo business online.",
+    "seoTitle": "Servizi: siti web, brand identity e strategia digitale",
+    "seoDescription": "Siti web in Next.js, brand identity e strategia digitale per PMI italiane. Vedi cosa ricevi in ogni fase del progetto.",
     "title": "I Nostri",
     "titleAccent": "Servizi",
-    "subtitle": "Soluzioni digitali complete per far crescere il tuo business",
-    "processHeading": "Il Nostro",
-    "processHeadingAccent": "Processo",
-    "processSubtitle": "Un approccio strutturato per risultati eccezionali",
+    "subtitle": "Siti web, brand identity e strategia digitale per PMI italiane",
+    "processHeading": "Come",
+    "processHeadingAccent": "lavoriamo",
+    "processSubtitle": "Quattro fasi. A ognuna consegniamo qualcosa.",
     "steps": [
-      { "title": "Discovery", "description": "Analizziamo il tuo business, i tuoi obiettivi e il mercato di riferimento." },
-      { "title": "Design & Development", "description": "Creiamo soluzioni su misura con tecnologie all'avanguardia." },
-      { "title": "Testing & Optimization", "description": "Testiamo, ottimizziamo e perfezioniamo ogni dettaglio." },
-      { "title": "Launch & Growth", "description": "Lanciamo il progetto e supportiamo la crescita continua." }
-    ]
+      {
+        "title": "Discovery",
+        "timing": "Giorni 1-3",
+        "description": "Una call e un questionario.",
+        "output": "Obiettivi, pubblico e sitemap concordati."
+      },
+      {
+        "title": "Design",
+        "timing": "Settimane 1-2",
+        "description": "Mockup delle pagine chiave.",
+        "output": "Due round di revisioni."
+      },
+      {
+        "title": "Sviluppo e test",
+        "timing": "",
+        "description": "Costruiamo e testiamo su mobile e desktop.",
+        "output": "Un'anteprima online."
+      },
+      {
+        "title": "Lancio e supporto",
+        "timing": "",
+        "description": "Messa online e configurazione degli analytics.",
+        "output": "Assistenza dopo il lancio, come da preventivo."
+      }
+    ],
+    "receive": "Tu ricevi"
   },
   "progettiPage": {
-    "seoTitle": "Progetti e Portfolio",
-    "seoDescription": "Esplora il nostro portfolio e i progetti open source su GitHub: siti web, web app e strategie digitali per i nostri clienti.",
+    "seoTitle": "Progetti e open source",
+    "seoDescription": "Il portfolio di Flow Digital Lab è in costruzione. Intanto trovi i nostri progetti open source su GitHub.",
     "title": "I Nostri",
     "titleAccent": "Progetti",
-    "subtitle": "Un assaggio dei lavori realizzati, filtrabili per categoria",
-    "filters": {
-      "all": "Tutti",
-      "web-design": "Web Design",
-      "branding": "Branding",
-      "ecommerce": "E-commerce",
-      "strategy": "Strategy"
-    },
-    "projects": [
-      { "title": "Nova Studio", "category": "web-design", "description": "Sito vetrina per uno studio di architettura, focus su portfolio fotografico." },
-      { "title": "Radice Bio", "category": "branding", "description": "Identità visiva completa per un brand di cosmetica naturale." },
-      { "title": "Mercato Locale", "category": "ecommerce", "description": "E-commerce headless per una rete di produttori agricoli locali." },
-      { "title": "Orbita Consulting", "category": "strategy", "description": "Strategia digitale e content plan per una società di consulenza B2B." },
-      { "title": "Lumen Interiors", "category": "web-design", "description": "Landing page ad alta conversione per uno studio di interior design." },
-      { "title": "Verde Collettivo", "category": "branding", "description": "Rebranding e brand guidelines per una cooperativa di servizi ambientali." }
-    ],
-    "portfolioHeading": "Il Nostro",
-    "portfolioHeadingAccent": "Portfolio",
-    "githubHeading": "Esplora i nostri progetti su GitHub",
-    "githubText": "Crediamo nell'open source e nella trasparenza del codice. Tutti i nostri progetti pubblici sono disponibili su GitHub per ispirarti e collaborare.",
+    "subtitle": "Il portfolio è in costruzione: i primi lavori compariranno qui.",
+    "githubHeading": "Il nostro codice è su GitHub",
+    "githubText": "I progetti pubblici sono su GitHub: componenti, template e strumenti che puoi usare e migliorare.",
     "githubCta": "Visita il nostro GitHub",
     "buildHeading": "Cosa",
     "buildHeadingAccent": "Costruiamo",
     "build": [
-      { "title": "Siti Web", "description": "Landing page, portfolio e siti aziendali con design moderno e performance ottimizzate." },
-      { "title": "Web App", "description": "Applicazioni web interattive con React, TypeScript e le tecnologie più moderne." },
-      { "title": "Open Source", "description": "Componenti, template e tool che condividiamo con la community." }
+      {
+        "title": "Siti web",
+        "description": "Landing page, portfolio e siti aziendali veloci da mobile."
+      },
+      {
+        "title": "Web app",
+        "description": "Applicazioni web interattive con React e TypeScript."
+      },
+      {
+        "title": "Open source",
+        "description": "Componenti, template e strumenti che condividiamo."
+      }
     ],
-    "comingSoonBadge": "Work in Progress",
-    "comingSoonTitle": "Nuovi progetti in arrivo",
-    "comingSoonText": "Stiamo lavorando a progetti entusiasmanti che saranno presto disponibili. Seguici su Instagram per restare aggiornato!",
+    "comingSoonBadge": "In arrivo",
+    "comingSoonTitle": "Stiamo costruendo il portfolio",
+    "comingSoonText": "Non pubblichiamo esempi inventati. I lavori veri compariranno qui, e gli aggiornamenti escono prima su Instagram.",
     "comingSoonCta": "Seguici su Instagram"
   },
   "contattiPage": {
-    "seoTitle": "Contattaci - Preventivo Gratuito",
-    "seoDescription": "Hai un progetto in mente? Contatta Flow Digital Lab per una consulenza gratuita su siti web, app e branding.",
+    "seoTitle": "Contatti e preventivo gratuito",
+    "seoDescription": "Raccontaci il tuo progetto. Flow Digital Lab ti risponde entro 24 ore con un preventivo gratuito per siti web, brand e strategia.",
     "title": "Contattaci",
-    "subtitle": "Pronto a trasformare la tua visione in realtà digitale?",
+    "subtitle": "Raccontacelo in 2 minuti. Rispondiamo entro 24 ore.",
     "infoTitle": "Parliamo del tuo progetto",
-    "infoDescription": "Hai un'idea, un progetto o semplicemente vuoi saperne di più? Siamo qui per ascoltarti e trovare la soluzione perfetta per te.",
+    "infoDescription": "Scrivici cosa ti serve, anche in poche righe. Ti rispondiamo entro 24 ore.",
     "methods": {
       "email": "Email",
       "whatsapp": "WhatsApp",
-      "location": "Locazione",
+      "location": "Sede",
       "locationValue": "Italia - Lavoriamo da remoto"
     },
     "hoursTitle": "Orari di Lavoro",
-    "hours": ["Lun - Ven: 9:00 - 18:00", "Sabato: Su appuntamento", "Domenica: Chiuso"],
+    "hours": [
+      "Lun - Ven: 9:00 - 18:00",
+      "Sabato: Su appuntamento",
+      "Domenica: Chiuso"
+    ],
     "form": {
       "nameLabel": "Nome Completo *",
       "namePlaceholder": "Mario Rossi",
@@ -169,7 +199,7 @@
       "privacyLabelLink": "Privacy Policy",
       "submit": "Invia Messaggio",
       "submitting": "Invio in corso...",
-      "success": "Messaggio inviato! Ti risponderemo presto.",
+      "success": "Messaggio inviato. Ti rispondiamo entro 24 ore.",
       "error": "Errore nell'invio. Riprova o scrivici su Instagram.",
       "validation": {
         "nameMin": "Il nome deve contenere almeno 2 caratteri.",
@@ -184,19 +214,19 @@
     "seoDescription": "Articoli su web design, branding e strategia digitale firmati Flow Digital Lab.",
     "title": "Il Nostro",
     "titleAccent": "Blog",
-    "subtitle": "Guide, approfondimenti e riflessioni su design e strategia digitale.",
+    "subtitle": "Guide pratiche su web design, branding e strategia digitale.",
     "readMore": "Leggi l'articolo",
     "minRead": "min di lettura",
     "backToBlog": "Torna al Blog",
     "publishedOn": "Pubblicato il",
-    "emptyState": "Nessun articolo disponibile per ora. Torna presto!"
+    "emptyState": "Nessun articolo per ora."
   },
   "legal": {
     "privacy": {
       "seoTitle": "Privacy Policy",
       "title": "Privacy",
       "titleAccent": "Policy",
-      "subtitle": "La tua privacy è importante per noi. Ecco come trattiamo i tuoi dati.",
+      "subtitle": "Quali dati raccogliamo e come li usiamo.",
       "updated": "Ultimo aggiornamento: Febbraio 2026",
       "sections": [
         {
@@ -250,7 +280,7 @@
       "seoTitle": "Termini e Condizioni",
       "title": "Termini e",
       "titleAccent": "Condizioni",
-      "subtitle": "Leggi attentamente i termini che regolano l'utilizzo dei nostri servizi.",
+      "subtitle": "Le regole che valgono per i nostri servizi.",
       "updated": "Ultimo aggiornamento: Febbraio 2026",
       "sections": [
         {
@@ -308,5 +338,36 @@
     },
     "contactBoxEmailLabel": "Email",
     "contactBoxInstagramLabel": "Instagram"
+  },
+  "audit": {
+    "heading": "Audit gratuito del tuo sito",
+    "text": "In 30 minuti ti diciamo cosa rallenta il sito, cosa manca per Google e cosa cambieremmo per primo.",
+    "cta": "Prenota l'audit"
+  },
+  "faq": {
+    "heading": "Domande",
+    "headingAccent": "frequenti",
+    "items": [
+      {
+        "q": "Quanto costa un sito web?",
+        "a": "Dipende da pagine, funzioni e contenuti. Dopo una prima call ti mandiamo un preventivo gratuito con costi e tempi. Si paga il 50% all'inizio e il 50% alla consegna."
+      },
+      {
+        "q": "Quanto tempo serve?",
+        "a": "Dipende dal progetto. Dopo la call la data di consegna è scritta nel preventivo."
+      },
+      {
+        "q": "Cosa succede dopo il lancio?",
+        "a": "Misuriamo i risultati e correggiamo quello che serve. L'assistenza inclusa è indicata nel preventivo."
+      },
+      {
+        "q": "Posso aggiornare i contenuti da solo?",
+        "a": "Sì. Alla consegna ti spieghiamo come modificare testi e immagini, e il preventivo indica come gestirai i contenuti."
+      },
+      {
+        "q": "Lavorate con clienti fuori dalla mia città?",
+        "a": "Sì, lavoriamo da remoto in tutta Italia."
+      }
+    ]
   }
 }

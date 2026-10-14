@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             >
                 <div className="container navbar-content">
                     <Link href="/" className="navbar-logo" onClick={() => setIsMobileMenuOpen(false)}>
-                        <span className="gradient-text">Flow</span>
+                        <span className="text-accent">Flow</span>
                         <span className="logo-subtitle">Digital Lab</span>
                     </Link>
 

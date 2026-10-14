@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { ArrowLeft } from 'lucide-react';
+import { buildMetadata, SITE_NAME, SITE_URL } from '@/lib/seo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAllSlugs, getPostBySlug } from '@/lib/blog';
 import { BLUR_DATA_URL } from '@/lib/image';
@@ -21,10 +22,15 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     const { locale, slug } = await params;
     const post = getPostBySlug(locale, slug);
     if (!post) return {};
-    return {
+    return buildMetadata({
+        locale,
+        path: `/blog/${slug}`,
         title: post.title,
         description: post.excerpt,
-    };
+        type: 'article',
+        publishedTime: post.date,
+        image: post.cover,
+    });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -40,8 +46,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
     const t = await getTranslations({ locale, namespace: 'blog' });
 
+    const articleJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        image: `${SITE_URL}${post.cover}`,
+        inLanguage: locale,
+        mainEntityOfPage: `${SITE_URL}/${locale}/blog/${slug}`,
+        author: { '@type': 'Organization', name: SITE_NAME },
+        publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: `${SITE_URL}/logo.svg` } },
+    };
+
     return (
         <div className="blog-article">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+            />
             <section className="blog-article-hero">
                 <div className="container">
                     <Link href="/blog" className="blog-back-link">

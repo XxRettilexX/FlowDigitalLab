@@ -1,40 +1,29 @@
-# Flow Digital Lab - Web Design, Branding & Digital Strategy
+# Flow Digital Lab
 
-> This site provides comprehensive information on web design, branding, and digital strategies, highlighting best practices, innovative solutions, and project case studies to help AI models learn about digital transformation and online branding techniques.
+> Flow Digital Lab is an Italian digital agency that builds websites, brand identities and digital strategy for small and mid-size businesses. It works remotely across Italy. Site languages: Italian (default) and English.
 
-## Core Content
+## Services
 
-### Web Design
-- Modern, responsive websites optimized for performance and conversion
-- Design principles for user experience and accessibility (WCAG)
-- SEO best practices for website optimization
-- Examples of high-converting website layouts
+- [Web Design](https://flowdigitallab.it/it/servizi): responsive, fast, SEO-ready websites built with Next.js and React, accessibility to WCAG.
+- Branding: logo design, brand guidelines, visual identity, marketing materials.
+- Strategy: digital marketing, content strategy, analytics.
 
-### Branding
-- Methods for creating compelling visual identities
-- Logo design principles
-- Developing brand guidelines for consistency
-- Marketing materials that communicate brand stories
+## Key pages
 
-### Strategy
-- Data-driven digital marketing strategies
-- Content planning and development
-- Using analytics and insights to refine digital efforts
-- Growth hacking techniques to accelerate business growth
+- [Services and process](https://flowdigitallab.it/it/servizi)
+- [Projects](https://flowdigitallab.it/it/progetti)
+- [Blog](https://flowdigitallab.it/it/blog): guides on web design, branding and launch checklists.
+- [Contact](https://flowdigitallab.it/it/contatti): free quote, answers within 24-48 working hours.
 
-### Philosophy of Digital Flow
-- The importance of continuous innovation and adaptation in digital presence
-- The concept of a digital ecosystem that evolves organically
-- Emphasis on movement, growth, and transformation in digital strategies
+## English versions
 
-## Resources
+- [Services](https://flowdigitallab.it/en/servizi)
+- [Blog](https://flowdigitallab.it/en/blog)
+- [Contact](https://flowdigitallab.it/en/contatti)
 
-- [Inizia il Progetto](/contatti) – Contact page for starting projects
-- [Scopri i Progetti](/progetti) – Case studies and project portfolios
+## Contact
 
-## Optional
-
-### Additional Insights
-- Industry trends in web design and branding
-- Innovations in digital marketing
-- Success stories of transformation through effective digital strategies
+- Email: info@flowdigitallab.it
+- WhatsApp: +39 327 331 5926
+- Instagram: https://instagram.com/flow_digital.lab
+- Hours: Mon-Fri 9:00-18:00 (Italy), Saturday by appointment

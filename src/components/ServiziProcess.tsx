@@ -2,20 +2,19 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Zap, Code, Palette, TrendingUp } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import ScrollReveal from './ScrollReveal';
 
-const ICONS = [
-    <Zap size={32} key="zap" />,
-    <Code size={32} key="code" />,
-    <Palette size={32} key="palette" />,
-    <TrendingUp size={32} key="trend" />,
-];
+interface Step {
+    title: string;
+    timing: string;
+    description: string;
+    output: string;
+}
 
 const ServiziProcess: React.FC = () => {
     const t = useTranslations('serviziPage');
-    const steps = t.raw('steps') as { title: string; description: string }[];
+    const steps = t.raw('steps') as Step[];
 
     return (
         <section className="process-section">
@@ -37,10 +36,15 @@ const ServiziProcess: React.FC = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.08 }}
                         >
-                            <div className="process-number">{String(index + 1).padStart(2, '0')}</div>
-                            <div className="process-icon">{ICONS[index % ICONS.length]}</div>
+                            <div className="process-number">
+                                {String(index + 1).padStart(2, '0')}
+                                {step.timing && <span> · {step.timing}</span>}
+                            </div>
                             <h3 className="process-title">{step.title}</h3>
                             <p className="process-description">{step.description}</p>
+                            <p className="process-output">
+                                <strong>{t('receive')}:</strong> {step.output}
+                            </p>
                         </motion.div>
                     ))}
                 </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Instagram, Linkedin, Github, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, Instagram, Github, MessageCircle } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
@@ -9,6 +9,7 @@ const Footer: React.FC<FooterProps> = () => {
     const currentYear = new Date().getFullYear();
     const t = useTranslations('footer');
     const tCommon = useTranslations('common');
+    const tServ = useTranslations('services');
 
     return (
         <footer className="footer">
@@ -16,7 +17,7 @@ const Footer: React.FC<FooterProps> = () => {
                 <div className="footer-content">
                     <div className="footer-column">
                         <div className="footer-logo">
-                            <span className="gradient-text">Flow</span>
+                            <span className="text-accent">Flow</span>
                             <span className="logo-subtitle">Digital Lab</span>
                         </div>
                         <p className="footer-tagline">{t('tagline')}</p>
@@ -24,10 +25,7 @@ const Footer: React.FC<FooterProps> = () => {
                             <a href="https://instagram.com/flow_digital.lab" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                                 <Instagram size={20} />
                             </a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
-                                <Linkedin size={20} />
-                            </a>
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+                            <a href="https://github.com/flowdigitallab" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
                                 <Github size={20} />
                             </a>
                         </div>
@@ -47,10 +45,9 @@ const Footer: React.FC<FooterProps> = () => {
                     <div className="footer-column">
                         <h4 className="footer-heading">{t('servicesHeading')}</h4>
                         <ul className="footer-links">
-                            <li><Link href="/servizi">Web Design</Link></li>
-                            <li><Link href="/servizi">Branding</Link></li>
-                            <li><Link href="/servizi">Digital Strategy</Link></li>
-                            <li><Link href="/servizi">SEO & Marketing</Link></li>
+                            <li><Link href="/servizi">{tServ('items.0.title')}</Link></li>
+                            <li><Link href="/servizi">{tServ('items.1.title')}</Link></li>
+                            <li><Link href="/servizi">{tServ('items.2.title')}</Link></li>
                         </ul>
                     </div>
 

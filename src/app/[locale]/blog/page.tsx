@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getAllPosts } from '@/lib/blog';
 import BlogGrid from '@/components/BlogGrid';
@@ -10,10 +11,7 @@ interface BlogPageProps {
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'blog' });
-    return {
-        title: t('seoTitle'),
-        description: t('seoDescription'),
-    };
+    return buildMetadata({ locale, path: '/blog', title: t('seoTitle'), description: t('seoDescription') });
 }
 
 export default async function BlogPage({ params }: BlogPageProps) {

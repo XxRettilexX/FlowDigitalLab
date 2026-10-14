@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Services from '@/components/Services';
 import ServiziProcess from '@/components/ServiziProcess';
@@ -10,10 +11,7 @@ interface ServiziPageProps {
 export async function generateMetadata({ params }: ServiziPageProps): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'serviziPage' });
-    return {
-        title: t('seoTitle'),
-        description: t('seoDescription'),
-    };
+    return buildMetadata({ locale, path: '/servizi', title: t('seoTitle'), description: t('seoDescription') });
 }
 
 export default async function ServiziPage({ params }: ServiziPageProps) {

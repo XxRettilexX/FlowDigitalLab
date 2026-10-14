@@ -1,19 +1,11 @@
 'use client';
 
 import React from 'react';
-import { Code, Palette, TrendingUp, ArrowUpRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import ScrollReveal from './ScrollReveal';
 
-const ICONS = [
-    <Code size={22} key="code" />,
-    <Palette size={22} key="palette" />,
-    <TrendingUp size={22} key="trend" />,
-];
-
 interface ServiceRowProps {
-    icon: React.ReactNode;
     number: string;
     title: string;
     description: string;
@@ -21,7 +13,7 @@ interface ServiceRowProps {
     index: number;
 }
 
-const ServiceRow: React.FC<ServiceRowProps> = ({ icon, number, title, description, features, index }) => {
+const ServiceRow: React.FC<ServiceRowProps> = ({ number, title, description, features, index }) => {
     return (
         <motion.article
             className="service-row"
@@ -34,7 +26,6 @@ const ServiceRow: React.FC<ServiceRowProps> = ({ icon, number, title, descriptio
 
             <div className="service-row-main">
                 <div className="service-row-heading">
-                    <span className="service-icon">{icon}</span>
                     <h3 className="service-title">{title}</h3>
                 </div>
                 <p className="service-description">{description}</p>
@@ -43,7 +34,6 @@ const ServiceRow: React.FC<ServiceRowProps> = ({ icon, number, title, descriptio
             <ul className="service-features">
                 {features.map((feature, i) => (
                     <li key={i}>
-                        <ArrowUpRight size={14} className="feature-icon" />
                         {feature}
                     </li>
                 ))}
@@ -72,7 +62,6 @@ const Services: React.FC<ServicesProps> = () => {
                     {items.map((service, index) => (
                         <ServiceRow
                             key={index}
-                            icon={ICONS[index % ICONS.length]}
                             number={String(index + 1).padStart(2, '0')}
                             title={service.title}
                             description={service.description}

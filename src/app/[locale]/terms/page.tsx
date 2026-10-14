@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { FileText, Scale, AlertCircle, CreditCard, RefreshCw, Gavel } from 'lucide-react';
 import { renderBold } from '@/lib/renderBold';
@@ -19,7 +20,7 @@ const ICONS = [
 export async function generateMetadata({ params }: TermsPageProps): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'legal.terms' });
-    return { title: t('seoTitle') };
+    return buildMetadata({ locale, path: '/terms', title: t('seoTitle') });
 }
 
 export default async function TermsPage({ params }: TermsPageProps) {

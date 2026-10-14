@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Github, ExternalLink } from 'lucide-react';
 import BuildList from '@/components/BuildList';
-import PortfolioFilter from '@/components/PortfolioFilter';
 import ScrollReveal from '@/components/ScrollReveal';
 
 interface ProgettiPageProps {
@@ -12,10 +12,7 @@ interface ProgettiPageProps {
 export async function generateMetadata({ params }: ProgettiPageProps): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'progettiPage' });
-    return {
-        title: t('seoTitle'),
-        description: t('seoDescription'),
-    };
+    return buildMetadata({ locale, path: '/progetti', title: t('seoTitle'), description: t('seoDescription') });
 }
 
 export default async function ProgettiPage({ params }: ProgettiPageProps) {
@@ -23,8 +20,6 @@ export default async function ProgettiPage({ params }: ProgettiPageProps) {
     setRequestLocale(locale);
     const t = await getTranslations({ locale, namespace: 'progettiPage' });
 
-    const projects = t.raw('projects') as { title: string; category: string; description: string }[];
-    const filters = t.raw('filters') as Record<string, string>;
     const build = t.raw('build') as { title: string; description: string }[];
 
     return (
@@ -40,15 +35,21 @@ export default async function ProgettiPage({ params }: ProgettiPageProps) {
 
             <section className="progetti-content">
                 <div className="container">
-                    <section className="portfolio-section">
-                        <ScrollReveal>
-                            <h2 className="section-title">
-                                {t('portfolioHeading')} <span className="text-accent">{t('portfolioHeadingAccent')}</span>
-                            </h2>
-                            <p className="section-subtitle">{t('subtitle')}</p>
-                        </ScrollReveal>
-                        <PortfolioFilter projects={projects} filters={filters} />
-                    </section>
+                    <ScrollReveal className="coming-soon">
+                        <div className="coming-soon-content">
+                            <span className="badge">{t('comingSoonBadge')}</span>
+                            <h3>{t('comingSoonTitle')}</h3>
+                            <p>{t('comingSoonText')}</p>
+                            <a
+                                href="https://instagram.com/flow_digital.lab"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-secondary"
+                            >
+                                {t('comingSoonCta')}
+                            </a>
+                        </div>
+                    </ScrollReveal>
 
                     <ScrollReveal className="github-showcase">
                         <div className="github-card">
@@ -75,22 +76,6 @@ export default async function ProgettiPage({ params }: ProgettiPageProps) {
                             {t('buildHeading')} <span className="text-accent">{t('buildHeadingAccent')}</span>
                         </h2>
                         <BuildList items={build} />
-                    </ScrollReveal>
-
-                    <ScrollReveal className="coming-soon">
-                        <div className="coming-soon-content">
-                            <span className="badge">{t('comingSoonBadge')}</span>
-                            <h3>{t('comingSoonTitle')}</h3>
-                            <p>{t('comingSoonText')}</p>
-                            <a
-                                href="https://instagram.com/flow_digital.lab"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-secondary"
-                            >
-                                {t('comingSoonCta')}
-                            </a>
-                        </div>
                     </ScrollReveal>
                 </div>
             </section>

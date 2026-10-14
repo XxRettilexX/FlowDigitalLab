@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildMetadata } from '@/lib/seo';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Mail, MessageCircle, MapPin, Clock } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
@@ -11,10 +12,7 @@ interface ContattiPageProps {
 export async function generateMetadata({ params }: ContattiPageProps): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'contattiPage' });
-    return {
-        title: t('seoTitle'),
-        description: t('seoDescription'),
-    };
+    return buildMetadata({ locale, path: '/contatti', title: t('seoTitle'), description: t('seoDescription') });
 }
 
 export default async function ContattiPage({ params }: ContattiPageProps) {

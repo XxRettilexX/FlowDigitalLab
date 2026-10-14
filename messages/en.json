@@ -24,59 +24,72 @@
     "contactCta": "Contact us"
   },
   "hero": {
-    "badge": "New Digital Energy",
-    "titleLine1": "We turn your vision",
-    "titleAccent": "Flow",
-    "titleLine2Full": "into a Digital Flow.",
-    "subtitle": "Web Design, Branding and high-conversion strategy for businesses that refuse to stand still.",
-    "ctaPrimary": "Start Your Project",
-    "ctaSecondary": "See Our Work",
-    "statIdeas": "Fresh Ideas",
-    "statCustom": "Tailor-made",
-    "statFast": "Fast Delivery",
-    "statFastLabel": "Fast"
+    "badge": "Web agency for small businesses",
+    "titleLine1": "Websites and brands that bring",
+    "titleAccent": "customers",
+    "titleLine2Full": "customers to your business.",
+    "subtitle": "We design and build your website, your visual identity and the strategy to get you found online. We reply within 24 hours.",
+    "ctaPrimary": "Get a free quote",
+    "ctaSecondary": "See our services",
+    "stats": [
+      {
+        "value": "24 h",
+        "label": "To reply to your request"
+      },
+      {
+        "value": "2",
+        "label": "Design revision rounds"
+      },
+      {
+        "value": "Italy",
+        "label": "We work remotely"
+      }
+    ]
   },
   "services": {
-    "heading": "Our",
-    "headingAccent": "Services",
-    "subtitle": "Complete solutions to take your business to the next level.",
+    "heading": "What we",
+    "headingAccent": "do",
+    "subtitle": "Three services. Each one lists what you get.",
     "items": [
       {
-        "title": "Web Design",
-        "description": "Modern, high-performing websites optimised for conversion.",
-        "features": ["Responsive Design", "Optimised Performance", "SEO Ready", "WCAG Accessibility"]
+        "title": "Websites",
+        "description": "Showcase site or online shop built in Next.js, fast on mobile, with baseline SEO and accessibility. Delivered live, with analytics set up.",
+        "features": [
+          "Custom design",
+          "Next.js development",
+          "Technical SEO",
+          "Training on how to use it"
+        ]
       },
       {
-        "title": "Branding",
-        "description": "Visual identities that tell your story and set you apart.",
-        "features": ["Logo Design", "Brand Guidelines", "Visual Identity", "Marketing Materials"]
+        "title": "Brand identity",
+        "description": "Logo, palette, typography and a short usage guide, so every piece you publish looks like it came from the same hand.",
+        "features": [
+          "Logo",
+          "Palette and typography",
+          "Usage guide"
+        ]
       },
       {
-        "title": "Strategy",
-        "description": "Data-driven digital strategy to maximise ROI.",
-        "features": ["Digital Marketing", "Content Strategy", "Analytics & Insights", "Growth Hacking"]
+        "title": "Digital strategy",
+        "description": "A plan built for you: which channels to use, what to publish, what to measure.",
+        "features": [
+          "Channel analysis",
+          "Editorial plan",
+          "Analytics and KPIs"
+        ]
       }
     ]
   },
   "manifesto": {
-    "heading": "The Flow",
-    "headingAccent": "Philosophy",
-    "p1Plain": "In the digital world, like water,",
-    "p1Bold": "movement is life",
-    "p1End": ". We don't believe in static websites or rigid strategies.",
-    "p2Plain": "We believe in the",
-    "p2Accent": "continuous flow",
-    "p2End": "of innovation, in constant adaptation, in organic growth.",
-    "p3Plain": "Every project is a",
-    "p3Bold": "living ecosystem",
-    "p3Mid": "that breathes, evolves and adapts to the market. Your digital presence isn't a finished product, but a",
-    "p3Accent": "flow in continuous transformation",
-    "p3End": ".",
-    "ctaText": "Ready to let your business flow towards new horizons?",
-    "quote": "Digital doesn't wait. Either you flow, or you stagnate."
+    "heading": "After launch",
+    "headingAccent": "the work goes on",
+    "text": "A website doesn't end at launch. After go-live we measure it, fix it and update it with you, because your customers and your market change. That's why we work in short phases and show you progress at each step.",
+    "ctaText": "Got a project? Tell us in two minutes.",
+    "ctaButton": "Write to us"
   },
   "footer": {
-    "tagline": "We turn visions into digital flows that convert.",
+    "tagline": "Websites, brands and digital strategy for small businesses in Italy.",
     "navHeading": "Navigation",
     "servicesHeading": "Services",
     "contactHeading": "Contact",
@@ -86,78 +99,95 @@
     "terms": "Terms & Conditions"
   },
   "home": {
-    "seoTitle": "Web Agency, Design & Strategic Development",
-    "seoDescription": "Digital agency specialising in Web Design, App Development and Branding Strategy. We turn your vision into digital reality with innovative solutions."
+    "seoTitle": "Web agency for small businesses: websites, brand and strategy",
+    "seoDescription": "Flow Digital Lab designs websites, brand identities and digital strategies for small businesses in Italy. Free quote, reply within 24 hours."
   },
   "serviziPage": {
-    "seoTitle": "Web Design and Development Services",
-    "seoDescription": "We offer professional Web Design, App Development, Branding and Digital Strategy services to grow your business online.",
+    "seoTitle": "Services: websites, brand identity and digital strategy",
+    "seoDescription": "Next.js websites, brand identity and digital strategy for small businesses in Italy. See what you get in each phase of the project.",
     "title": "Our",
     "titleAccent": "Services",
-    "subtitle": "Complete digital solutions to grow your business",
-    "processHeading": "Our",
-    "processHeadingAccent": "Process",
-    "processSubtitle": "A structured approach to exceptional results",
+    "subtitle": "Websites, brand identity and digital strategy for small businesses in Italy",
+    "processHeading": "How we",
+    "processHeadingAccent": "work",
+    "processSubtitle": "Four phases. We deliver something at each one.",
     "steps": [
-      { "title": "Discovery", "description": "We analyse your business, your goals and your target market." },
-      { "title": "Design & Development", "description": "We build tailor-made solutions with cutting-edge technology." },
-      { "title": "Testing & Optimization", "description": "We test, optimise and refine every single detail." },
-      { "title": "Launch & Growth", "description": "We launch the project and support its continuous growth." }
-    ]
+      {
+        "title": "Discovery",
+        "timing": "Days 1-3",
+        "description": "One call and a questionnaire.",
+        "output": "Agreed goals, audience and sitemap."
+      },
+      {
+        "title": "Design",
+        "timing": "Weeks 1-2",
+        "description": "Mockups of key pages.",
+        "output": "Two revision rounds."
+      },
+      {
+        "title": "Build and test",
+        "timing": "",
+        "description": "We build and test on mobile and desktop.",
+        "output": "A live preview."
+      },
+      {
+        "title": "Launch and support",
+        "timing": "",
+        "description": "Go-live and analytics setup.",
+        "output": "Support after launch, as listed in the quote."
+      }
+    ],
+    "receive": "You get"
   },
   "progettiPage": {
-    "seoTitle": "Projects and Portfolio",
-    "seoDescription": "Explore our portfolio and open-source projects on GitHub: websites, web apps and digital strategy for our clients.",
+    "seoTitle": "Projects and open source",
+    "seoDescription": "The Flow Digital Lab portfolio is being built. Meanwhile, you can find our open-source projects on GitHub.",
     "title": "Our",
     "titleAccent": "Projects",
-    "subtitle": "A sample of our work, filterable by category",
-    "filters": {
-      "all": "All",
-      "web-design": "Web Design",
-      "branding": "Branding",
-      "ecommerce": "E-commerce",
-      "strategy": "Strategy"
-    },
-    "projects": [
-      { "title": "Nova Studio", "category": "web-design", "description": "Showcase website for an architecture studio, built around a photographic portfolio." },
-      { "title": "Radice Bio", "category": "branding", "description": "Full visual identity for a natural cosmetics brand." },
-      { "title": "Mercato Locale", "category": "ecommerce", "description": "Headless e-commerce for a network of local farmers." },
-      { "title": "Orbita Consulting", "category": "strategy", "description": "Digital strategy and content plan for a B2B consulting firm." },
-      { "title": "Lumen Interiors", "category": "web-design", "description": "High-conversion landing page for an interior design studio." },
-      { "title": "Verde Collettivo", "category": "branding", "description": "Rebranding and brand guidelines for an environmental services cooperative." }
-    ],
-    "portfolioHeading": "Our",
-    "portfolioHeadingAccent": "Portfolio",
-    "githubHeading": "Explore our projects on GitHub",
-    "githubText": "We believe in open source and code transparency. All our public projects are available on GitHub to inspire and collaborate.",
+    "subtitle": "The portfolio is being built: our first projects will appear here.",
+    "githubHeading": "Our code is on GitHub",
+    "githubText": "Our public projects are on GitHub: components, templates and tools you can use and improve.",
     "githubCta": "Visit our GitHub",
     "buildHeading": "What We",
     "buildHeadingAccent": "Build",
     "build": [
-      { "title": "Websites", "description": "Landing pages, portfolios and company websites with modern design and optimised performance." },
-      { "title": "Web Apps", "description": "Interactive web applications built with React, TypeScript and the latest technology." },
-      { "title": "Open Source", "description": "Components, templates and tools that we share with the community." }
+      {
+        "title": "Websites",
+        "description": "Landing pages, portfolios and company sites that load fast on mobile."
+      },
+      {
+        "title": "Web apps",
+        "description": "Interactive web applications built with React and TypeScript."
+      },
+      {
+        "title": "Open source",
+        "description": "Components, templates and tools we share."
+      }
     ],
-    "comingSoonBadge": "Work in Progress",
-    "comingSoonTitle": "New projects coming soon",
-    "comingSoonText": "We're working on exciting projects that will be available soon. Follow us on Instagram to stay updated!",
+    "comingSoonBadge": "Coming soon",
+    "comingSoonTitle": "We are building our portfolio",
+    "comingSoonText": "We do not publish made-up examples. Real projects will appear here, and updates go out on Instagram first.",
     "comingSoonCta": "Follow us on Instagram"
   },
   "contattiPage": {
-    "seoTitle": "Contact Us - Free Quote",
-    "seoDescription": "Have a project in mind? Contact Flow Digital Lab for a free consultation on websites, apps and branding.",
+    "seoTitle": "Contact and free quote",
+    "seoDescription": "Tell us about your project. Flow Digital Lab replies within 24 hours with a free quote for websites, brand and strategy.",
     "title": "Contact Us",
-    "subtitle": "Ready to turn your vision into digital reality?",
+    "subtitle": "Tell us in two minutes. We reply within 24 hours.",
     "infoTitle": "Let's talk about your project",
-    "infoDescription": "Have an idea, a project, or simply want to know more? We're here to listen and find the perfect solution for you.",
+    "infoDescription": "Tell us what you need, even in a few lines. We reply within 24 hours.",
     "methods": {
       "email": "Email",
       "whatsapp": "WhatsApp",
-      "location": "Location",
+      "location": "Base",
       "locationValue": "Italy - We work remotely"
     },
     "hoursTitle": "Business Hours",
-    "hours": ["Mon - Fri: 9:00 - 18:00", "Saturday: By appointment", "Sunday: Closed"],
+    "hours": [
+      "Mon - Fri: 9:00 - 18:00",
+      "Saturday: By appointment",
+      "Sunday: Closed"
+    ],
     "form": {
       "nameLabel": "Full Name *",
       "namePlaceholder": "John Smith",
@@ -169,7 +199,7 @@
       "privacyLabelLink": "Privacy Policy",
       "submit": "Send Message",
       "submitting": "Sending...",
-      "success": "Message sent! We'll get back to you soon.",
+      "success": "Message sent. We reply within 24 hours.",
       "error": "Something went wrong. Try again or message us on Instagram.",
       "validation": {
         "nameMin": "Name must be at least 2 characters.",
@@ -184,19 +214,19 @@
     "seoDescription": "Articles on web design, branding and digital strategy by Flow Digital Lab.",
     "title": "Our",
     "titleAccent": "Blog",
-    "subtitle": "Guides, insights and thoughts on design and digital strategy.",
+    "subtitle": "Practical guides on web design, branding and digital strategy.",
     "readMore": "Read the article",
     "minRead": "min read",
     "backToBlog": "Back to Blog",
     "publishedOn": "Published on",
-    "emptyState": "No articles available yet. Check back soon!"
+    "emptyState": "No articles yet."
   },
   "legal": {
     "privacy": {
       "seoTitle": "Privacy Policy",
       "title": "Privacy",
       "titleAccent": "Policy",
-      "subtitle": "Your privacy matters to us. Here's how we handle your data.",
+      "subtitle": "Which data we collect and how we use it.",
       "updated": "Last updated: February 2026",
       "sections": [
         {
@@ -250,7 +280,7 @@
       "seoTitle": "Terms & Conditions",
       "title": "Terms &",
       "titleAccent": "Conditions",
-      "subtitle": "Please read carefully the terms governing the use of our services.",
+      "subtitle": "The rules that apply to our services.",
       "updated": "Last updated: February 2026",
       "sections": [
         {
@@ -308,5 +338,36 @@
     },
     "contactBoxEmailLabel": "Email",
     "contactBoxInstagramLabel": "Instagram"
+  },
+  "audit": {
+    "heading": "Free website audit",
+    "text": "In 30 minutes we tell you what slows your site down, what Google is missing and what we'd fix first.",
+    "cta": "Book the audit"
+  },
+  "faq": {
+    "heading": "Frequently asked",
+    "headingAccent": "questions",
+    "items": [
+      {
+        "q": "How much does a website cost?",
+        "a": "It depends on pages, features and content. After a first call we send a free quote with costs and timing. You pay 50% at the start and 50% on delivery."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "It depends on the project. After the call, the delivery date is written in the quote."
+      },
+      {
+        "q": "What happens after launch?",
+        "a": "We measure results and fix what needs fixing. The support included is listed in the quote."
+      },
+      {
+        "q": "Can I update the content myself?",
+        "a": "Yes. At delivery we show you how to edit text and images, and the quote states how you will manage content."
+      },
+      {
+        "q": "Do you work with clients outside my city?",
+        "a": "Yes, we work remotely across Italy."
+      }
+    ]
   }
 }

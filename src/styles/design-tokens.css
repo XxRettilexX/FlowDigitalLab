@@ -1,32 +1,32 @@
 /* ========================================
    FLOW DIGITAL LAB - DESIGN TOKENS
-   Style: "Ink & Signal" (Swiss-editorial, professional)
+   Style: warm paper, ink and one brand-blue accent (from the logo) (editorial)
    Single source of truth for color, type, space, radius, shadow, motion.
    Dark mode is driven by [data-theme="dark"] on <html> (next-themes).
    ======================================== */
 
 :root {
   /* ---- Color: surfaces & text (light, default) ---- */
-  --color-bg: #F7F8FA;
-  --color-surface: #FFFFFF;
-  --color-surface-alt: #EEF1F5;
-  --color-text: #0B1220;
-  --color-text-secondary: #4B5666;
-  --color-border: #DDE1E7;
-  --color-border-strong: #0B1220;
+  --color-bg: #F4F1EA;
+  --color-surface: #FBF9F4;
+  --color-surface-alt: #EAE5DA;
+  --color-text: #1A1612;
+  --color-text-secondary: #5A5148;
+  --color-border: #D8D1C2;
+  --color-border-strong: #1A1612;
 
   /* ---- Color: inverse band (always-dark full-width sections) ---- */
-  --color-bg-inverse: #0B1220;
-  --color-surface-inverse: #141C2B;
-  --color-text-inverse: #F3F5F8;
-  --color-text-inverse-secondary: #A7AFBE;
-  --color-border-inverse: #2A3446;
+  --color-bg-inverse: #1A1612;
+  --color-surface-inverse: #241F19;
+  --color-text-inverse: #F4F1EA;
+  --color-text-inverse-secondary: #B5ADA0;
+  --color-border-inverse: #3A332A;
 
   /* ---- Color: the ONE accent (CTAs + links only) ---- */
-  --color-accent: #2A5CFF;
-  --color-accent-hover: #1E46D6;
+  --color-accent: #0E4370;
+  --color-accent-hover: #0A3253;
   --color-accent-contrast: #FFFFFF;
-  --color-accent-on-dark: #7C9EFF;
+  --color-accent-on-dark: #7FC4C0;
   /* Alias used by inline text emphasis: swaps automatically with theme. */
   --color-accent-text: var(--color-accent);
 
@@ -41,8 +41,8 @@
   --color-whatsapp-hover: #16A34A;
 
   /* ---- Typography ---- */
-  --font-heading: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-heading: var(--font-fraunces), Georgia, 'Times New Roman', serif;
+  --font-body: var(--font-plex), 'Segoe UI', system-ui, sans-serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -52,9 +52,9 @@
   --text-2xl: 1.75rem;
   --text-3xl: 2.25rem;
   --text-4xl: 3rem;
-  --text-hero: clamp(2.5rem, 5.5vw, 4.5rem);
+  --text-hero: clamp(2.5rem, 6vw, 5rem);
 
-  --leading-tight: 1.05;
+  --leading-tight: 1.02;
   --leading-snug: 1.3;
   --leading-normal: 1.6;
   --leading-relaxed: 1.75;
@@ -72,13 +72,13 @@
   --space-10: 140px;
 
   /* ---- Radius ---- */
-  --radius-sm: 6px;
-  --radius-md: 10px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
 
   /* ---- Elevation: ONE strategy = hairline borders. This single shadow
      token is reserved for floating elements (WhatsApp FAB, mobile nav,
      toasts) — never used on cards. ---- */
-  --shadow-floating: 0 8px 24px rgba(11, 18, 32, 0.18);
+  --shadow-floating: 0 8px 24px rgba(26, 22, 18, 0.18);
 
   /* ---- Layout ---- */
   --container-max: 1180px;
@@ -98,16 +98,16 @@
    (attribute="data-theme") so both explicit toggle and system
    preference are respected without any extra JS. */
 :root[data-theme='dark'] {
-  --color-bg: #0B1220;
-  --color-surface: #141C2B;
-  --color-surface-alt: #1B2434;
-  --color-text: #F3F5F8;
-  --color-text-secondary: #A7AFBE;
-  --color-border: #2A3446;
-  --color-border-strong: #F3F5F8;
+  --color-bg: #14110E;
+  --color-surface: #1D1914;
+  --color-surface-alt: #26211A;
+  --color-text: #F4F1EA;
+  --color-text-secondary: #B5ADA0;
+  --color-border: #38312A;
+  --color-border-strong: #F4F1EA;
 
-  --color-bg-inverse: #050810;
-  --color-surface-inverse: #0B1220;
+  --color-bg-inverse: #0C0A08;
+  --color-surface-inverse: #14110E;
 
   --color-accent-text: var(--color-accent-on-dark);
 
