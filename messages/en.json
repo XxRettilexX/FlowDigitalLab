@@ -96,7 +96,9 @@
     "location": "Italy",
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
-    "terms": "Terms & Conditions"
+    "terms": "Terms & Conditions",
+    "cookie": "Cookie Policy",
+    "owner": "by Vito Strisciuglio, Bari"
   },
   "home": {
     "seoTitle": "Web agency for small businesses: websites, brand and strategy",
@@ -227,51 +229,52 @@
       "title": "Privacy",
       "titleAccent": "Policy",
       "subtitle": "Which data we collect and how we use it.",
-      "updated": "Last updated: February 2026",
+      "updated": "Last updated: October 2026",
       "sections": [
         {
-          "heading": "1. Data Collection",
-          "body": "Flow Digital Lab collects the following personal data when you use our website:",
-          "list": [
-            "**Contact data:** Name, email and message when you fill in the contact form.",
-            "**Browsing data:** IP address, browser, device and pages visited via technical cookies.",
-            "**Voluntary data:** Any additional information you choose to share with us."
-          ]
+          "heading": "1. Data controller",
+          "body": "The controller is **Vito Strisciuglio**, trading as Flow Digital Lab, based in Bari (Puglia, Italy).",
+          "footer": "For any request about your data, write to **info@flowdigitallab.it**."
         },
         {
-          "heading": "2. Use of Data",
-          "body": "Your data is used exclusively to:",
+          "heading": "2. Which data we process and why",
+          "body": "We only process data you give us or that the site records in order to work:",
           "list": [
-            "Respond to your contact and quote requests.",
-            "Improve the browsing experience on our website.",
-            "Send you communications about our services (only with your consent).",
-            "Comply with legal and tax obligations."
+            "**Messages from the form or WhatsApp:** name, email and the text of your message. We use them to reply and prepare a quote. Legal basis: pre-contractual steps you request (Art. 6.1.b GDPR). We keep them for 24 months after the last contact. If a contract starts, we keep them for its duration and then for 10 years for tax obligations.",
+            "**Technical browsing data:** IP address and requests recorded in the hosting provider's logs. They keep the site secure and working. Legal basis: legitimate interest (Art. 6.1.f GDPR). The provider keeps them for the period set in its own policy."
           ],
-          "footer": "**We do not sell or share your data with third parties** for commercial purposes."
+          "footer": "Providing the form data is optional. Without name, email and message we cannot reply. We do not use your data for advertising and we do not make automated decisions."
         },
         {
-          "heading": "3. Data Security",
-          "body": "We adopt technical and organisational security measures to protect your personal data:",
+          "heading": "3. Who we share data with",
+          "body": "We use providers that process data on our behalf:",
           "list": [
-            "Secure HTTPS connection for all communications.",
-            "Access to data restricted to authorised personnel only.",
-            "Regular backups and up-to-date protection systems."
-          ]
+            "**Vercel Inc.:** site hosting.",
+            "**Resend:** sending the contact form emails.",
+            "**Meta (WhatsApp):** only if you message us on WhatsApp, under their privacy notice."
+          ],
+          "footer": "Some providers are based in the United States. Transfers use the safeguards the GDPR provides: the European Commission's standard contractual clauses or the EU-US Data Privacy Framework. **We do not sell your data.**"
         },
         {
-          "heading": "4. Your Rights",
-          "body": "Under the GDPR (EU Regulation 2016/679), you have the right to:",
+          "heading": "4. Security",
+          "body": "The site uses an HTTPS connection. Messages arrive in the controller's email inbox and only the controller can access it."
+        },
+        {
+          "heading": "5. Your rights",
+          "body": "Under the GDPR (EU Regulation 2016/679) you can exercise these rights:",
           "list": [
-            "**Access:** Request a copy of your personal data.",
-            "**Rectification:** Correct inaccurate or incomplete data.",
-            "**Erasure:** Request deletion of your data (\"right to be forgotten\").",
-            "**Portability:** Receive your data in a structured format.",
-            "**Objection:** Object to the processing of your data for specific purposes."
-          ]
+            "**Access:** receive a copy of your data.",
+            "**Rectification:** correct inaccurate or incomplete data.",
+            "**Erasure:** ask us to delete your data.",
+            "**Restriction:** ask us to pause processing.",
+            "**Portability:** receive your data in a structured format.",
+            "**Objection:** object to processing based on legitimate interest."
+          ],
+          "footer": "Write to info@flowdigitallab.it. We reply within 30 days. You can also lodge a complaint with the **Italian Data Protection Authority (Garante)** (garanteprivacy.it)."
         },
         {
-          "heading": "5. Contact",
-          "body": "For any question about our Privacy Policy or to exercise your rights, contact us:",
+          "heading": "6. Contact",
+          "body": "For questions about this notice:",
           "contactBox": true
         }
       ]
@@ -281,63 +284,95 @@
       "title": "Terms &",
       "titleAccent": "Conditions",
       "subtitle": "The rules that apply to our services.",
-      "updated": "Last updated: February 2026",
+      "updated": "Last updated: October 2026",
       "sections": [
         {
-          "heading": "1. Acceptance of Terms",
-          "body": "By using the Flow Digital Lab website and our services, you agree to be bound by these Terms & Conditions. If you do not accept these terms, please do not use our services.",
-          "footer": "We reserve the right to change these terms at any time. Changes take effect from the date they are published on the site."
+          "heading": "1. Who we are and how a contract starts",
+          "body": "The site belongs to **Vito Strisciuglio**, trading as Flow Digital Lab, based in Bari. The site presents our services for information. A contract starts when you accept the quote in writing.",
+          "footer": "We may update these terms. Changes apply from the date they are published and do not alter quotes already accepted."
         },
         {
-          "heading": "2. Description of Services",
-          "body": "Flow Digital Lab offers the following services:",
+          "heading": "2. Services",
+          "body": "We offer:",
           "list": [
-            "**Web Design & Development:** Design and development of custom websites.",
-            "**Branding:** Creation of visual identities, logos and brand guidelines.",
-            "**Digital Strategy:** Strategic consulting, SEO and digital marketing."
+            "**Websites:** design and development of showcase sites and online shops.",
+            "**Brand identity:** logo, palette, typography and usage guide.",
+            "**Digital strategy:** a plan for channels, content and metrics."
           ],
-          "footer": "The specific details of each project are defined in a separate quote, which forms an integral part of the contract."
+          "footer": "The quote sets out the details of each project and forms part of the contract."
         },
         {
-          "heading": "3. Payments and Billing",
-          "body": "Payment terms are as follows:",
+          "heading": "3. Payments and invoicing",
+          "body": "Unless the quote says otherwise:",
           "list": [
-            "**Deposit:** 50% of the total amount is due at the start of the project.",
-            "**Balance:** The remaining 50% is due on delivery of the project.",
-            "**Methods:** Bank transfer, PayPal or credit card.",
-            "**Invoicing:** An electronic invoice is issued for each payment."
+            "**Deposit:** 50% of the amount at the start of the project.",
+            "**Balance:** the remaining 50% on delivery.",
+            "**Methods:** bank transfer, PayPal or credit card.",
+            "**Invoicing:** we issue an electronic invoice for each payment. Payment terms are stated on the invoice."
           ],
-          "footer": "Prices are to be understood as excluding VAT, unless otherwise stated."
+          "footer": "Prices exclude VAT unless stated otherwise."
         },
         {
-          "heading": "4. Revisions and Changes",
-          "body": "The quote includes a specific number of revision rounds (usually 2-3). Additional revisions beyond those included will be quoted separately.",
-          "footer": "Substantial changes to the project scope after initial approval may result in additional costs and changes to delivery times."
+          "heading": "4. Revisions and changes",
+          "body": "The quote includes two design revision rounds. Extra revisions are quoted separately.",
+          "footer": "Substantial changes after approval can change costs and delivery times."
         },
         {
-          "heading": "5. Intellectual Property",
-          "body": "**Before final payment:** All materials produced remain the property of Flow Digital Lab.",
-          "footer": "**After final payment:** The client acquires full ownership of all agreed deliverables, including source files, graphics and code. Flow Digital Lab reserves the right to showcase completed work in its own portfolio, unless specific non-disclosure agreements (NDA) apply."
+          "heading": "5. Intellectual property",
+          "body": "**Before the balance:** the materials produced remain Flow Digital Lab's property.",
+          "footer": "**After the balance:** the client owns the agreed deliverables in full, including source files, graphics and code. Third-party components and open-source software stay under their own licence. We may show the work in our portfolio. The client's name and logo appear only with their consent, unless a non-disclosure agreement (NDA) applies."
         },
         {
-          "heading": "6. Limitation of Liability",
+          "heading": "6. Limitation of liability",
           "body": "Flow Digital Lab is not liable for:",
           "list": [
-            "Indirect, incidental or consequential damages arising from the use of our services.",
-            "Issues caused by third-party services (hosting, domain, etc.).",
-            "Delays due to lack of collaboration or late feedback from the client."
+            "Indirect or consequential damages arising from use of the services.",
+            "Problems with third-party services, such as hosting and domain.",
+            "Delays caused by late feedback or lack of cooperation from the client."
           ],
-          "footer": "Our maximum liability is limited to the total amount paid for the project."
+          "footer": "Maximum liability is limited to the amount paid for the project. This clause also appears in the quote and needs your specific written approval. If you are a consumer, your mandatory rights under the Italian Consumer Code remain valid."
         },
         {
-          "heading": "7. Governing Law",
-          "body": "These Terms & Conditions are governed by Italian law. Any dispute shall be subject to the jurisdiction of the court where Flow Digital Lab is domiciled.",
+          "heading": "7. Governing law and jurisdiction",
+          "body": "These terms follow Italian law. The Court of Bari has jurisdiction over disputes. If you are a consumer, the court of your domicile has jurisdiction.",
           "contactBox": true
         }
       ]
     },
     "contactBoxEmailLabel": "Email",
-    "contactBoxInstagramLabel": "Instagram"
+    "contactBoxInstagramLabel": "Instagram",
+    "cookie": {
+      "seoTitle": "Cookie Policy",
+      "title": "Cookie",
+      "titleAccent": "Policy",
+      "subtitle": "This site does not set cookies.",
+      "updated": "Last updated: October 2026",
+      "sections": [
+        {
+          "heading": "1. What we use",
+          "body": "The site does not set cookies. It saves one piece of information in your browser:",
+          "list": [
+            "**Theme preference (localStorage):** remembers the light or dark theme you choose. It stays on your device and is not sent to us. You can delete it from your browser settings."
+          ],
+          "footer": "It is a technical tool tied to a choice you make, so it does not need your consent (Art. 122 Italian Privacy Code)."
+        },
+        {
+          "heading": "2. What we do not use",
+          "body": "We do not use:",
+          "list": [
+            "Analytics or statistics cookies.",
+            "Profiling or advertising cookies.",
+            "Social network pixels.",
+            "Third-party cookies."
+          ],
+          "footer": "If we add them in future, we will ask for your consent before enabling them and update this page."
+        },
+        {
+          "heading": "3. Links to other services",
+          "body": "The site links to WhatsApp, Instagram and GitHub. If you click them you leave this site and those services' notices apply, which may use their own cookies."
+        }
+      ]
+    }
   },
   "audit": {
     "heading": "Free website audit",

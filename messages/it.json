@@ -96,7 +96,9 @@
     "location": "Italia",
     "rights": "Tutti i diritti riservati.",
     "privacy": "Privacy Policy",
-    "terms": "Termini & Condizioni"
+    "terms": "Termini & Condizioni",
+    "cookie": "Cookie Policy",
+    "owner": "di Vito Strisciuglio, Bari"
   },
   "home": {
     "seoTitle": "Web agency per PMI: siti web, brand e strategia",
@@ -227,51 +229,52 @@
       "title": "Privacy",
       "titleAccent": "Policy",
       "subtitle": "Quali dati raccogliamo e come li usiamo.",
-      "updated": "Ultimo aggiornamento: Febbraio 2026",
+      "updated": "Ultimo aggiornamento: ottobre 2026",
       "sections": [
         {
-          "heading": "1. Raccolta dei Dati",
-          "body": "Flow Digital Lab raccoglie i seguenti dati personali quando utilizzi il nostro sito web:",
-          "list": [
-            "**Dati di contatto:** Nome, email e messaggio quando compili il form di contatto.",
-            "**Dati di navigazione:** Indirizzo IP, browser, dispositivo e pagine visitate tramite cookie tecnici.",
-            "**Dati volontari:** Qualsiasi informazione aggiuntiva che decidi di condividere con noi."
-          ]
+          "heading": "1. Titolare del trattamento",
+          "body": "Il titolare è **Vito Strisciuglio**, che opera con il nome Flow Digital Lab, con sede a Bari (Puglia, Italia).",
+          "footer": "Per qualsiasi richiesta sui tuoi dati scrivi a **info@flowdigitallab.it**."
         },
         {
-          "heading": "2. Utilizzo dei Dati",
-          "body": "I tuoi dati vengono utilizzati esclusivamente per:",
+          "heading": "2. Quali dati trattiamo e perché",
+          "body": "Trattiamo solo i dati che ci dai o che il sito registra per funzionare:",
           "list": [
-            "Rispondere alle tue richieste di contatto e preventivi.",
-            "Migliorare l'esperienza di navigazione sul nostro sito.",
-            "Inviarti comunicazioni relative ai nostri servizi (solo con il tuo consenso).",
-            "Adempiere agli obblighi legali e fiscali."
+            "**Messaggi dal form o da WhatsApp:** nome, email e testo del messaggio. Li usiamo per risponderti e preparare un preventivo. Base giuridica: misure precontrattuali richieste da te (art. 6.1.b GDPR). Li conserviamo per 24 mesi dall'ultimo contatto. Se nasce un contratto, li conserviamo per la sua durata e poi per 10 anni per gli obblighi fiscali.",
+            "**Dati tecnici di navigazione:** indirizzo IP e richieste registrate nei log del fornitore di hosting. Servono a garantire la sicurezza e il funzionamento del sito. Base giuridica: legittimo interesse (art. 6.1.f GDPR). Il fornitore li conserva per il tempo previsto dalla propria politica."
           ],
-          "footer": "**Non vendiamo né condividiamo i tuoi dati con terze parti** per scopi commerciali."
+          "footer": "Il conferimento dei dati del form è facoltativo. Senza nome, email e messaggio non possiamo risponderti. Non usiamo i tuoi dati per pubblicità e non prendiamo decisioni automatizzate."
         },
         {
-          "heading": "3. Sicurezza dei Dati",
-          "body": "Adottiamo misure di sicurezza tecniche e organizzative per proteggere i tuoi dati personali:",
+          "heading": "3. Con chi condividiamo i dati",
+          "body": "Usiamo fornitori che trattano i dati per nostro conto:",
           "list": [
-            "Connessione sicura HTTPS per tutte le comunicazioni.",
-            "Accesso limitato ai dati solo al personale autorizzato.",
-            "Backup regolari e sistemi di protezione aggiornati."
-          ]
+            "**Vercel Inc.:** hosting del sito.",
+            "**Resend:** invio delle email del form di contatto.",
+            "**Meta (WhatsApp):** solo se ci scrivi su WhatsApp, secondo la loro informativa."
+          ],
+          "footer": "Alcuni fornitori hanno sede negli Stati Uniti. Il trasferimento avviene con le garanzie previste dal GDPR: le clausole contrattuali standard della Commissione europea o l'EU-US Data Privacy Framework. **Non vendiamo i tuoi dati.**"
         },
         {
-          "heading": "4. I Tuoi Diritti",
-          "body": "Ai sensi del GDPR (Regolamento UE 2016/679), hai il diritto di:",
+          "heading": "4. Sicurezza",
+          "body": "Il sito usa una connessione HTTPS. I messaggi arrivano alla casella email del titolare e solo il titolare vi accede."
+        },
+        {
+          "heading": "5. I tuoi diritti",
+          "body": "Ai sensi del GDPR (Regolamento UE 2016/679) puoi esercitare questi diritti:",
           "list": [
-            "**Accesso:** Richiedere una copia dei tuoi dati personali.",
-            "**Rettifica:** Correggere dati inesatti o incompleti.",
-            "**Cancellazione:** Richiedere la cancellazione dei tuoi dati (\"diritto all'oblio\").",
-            "**Portabilità:** Ricevere i tuoi dati in un formato strutturato.",
-            "**Opposizione:** Opporti al trattamento dei tuoi dati per specifici scopi."
-          ]
+            "**Accesso:** ricevere una copia dei tuoi dati.",
+            "**Rettifica:** correggere dati inesatti o incompleti.",
+            "**Cancellazione:** chiedere che cancelliamo i tuoi dati.",
+            "**Limitazione:** chiedere di sospendere il trattamento.",
+            "**Portabilità:** ricevere i tuoi dati in un formato strutturato.",
+            "**Opposizione:** opporti al trattamento basato sul legittimo interesse."
+          ],
+          "footer": "Scrivi a info@flowdigitallab.it. Rispondiamo entro 30 giorni. Puoi anche presentare reclamo al **Garante per la protezione dei dati personali** (garanteprivacy.it)."
         },
         {
-          "heading": "5. Contatti",
-          "body": "Per qualsiasi domanda sulla nostra Privacy Policy o per esercitare i tuoi diritti, contattaci:",
+          "heading": "6. Contatti",
+          "body": "Per domande su questa informativa:",
           "contactBox": true
         }
       ]
@@ -281,63 +284,95 @@
       "title": "Termini e",
       "titleAccent": "Condizioni",
       "subtitle": "Le regole che valgono per i nostri servizi.",
-      "updated": "Ultimo aggiornamento: Febbraio 2026",
+      "updated": "Ultimo aggiornamento: ottobre 2026",
       "sections": [
         {
-          "heading": "1. Accettazione dei Termini",
-          "body": "Utilizzando il sito web di Flow Digital Lab e i nostri servizi, accetti di essere vincolato dai presenti Termini e Condizioni. Se non accetti questi termini, ti preghiamo di non utilizzare i nostri servizi.",
-          "footer": "Ci riserviamo il diritto di modificare questi termini in qualsiasi momento. Le modifiche saranno effettive dalla data di pubblicazione sul sito."
+          "heading": "1. Chi siamo e come nasce un contratto",
+          "body": "Il sito è di **Vito Strisciuglio**, che opera con il nome Flow Digital Lab, con sede a Bari. Il sito presenta i servizi a scopo informativo. Il contratto nasce quando accetti per iscritto il preventivo.",
+          "footer": "Possiamo aggiornare questi termini. Le modifiche valgono dalla data di pubblicazione e non cambiano i preventivi già accettati."
         },
         {
-          "heading": "2. Descrizione dei Servizi",
-          "body": "Flow Digital Lab offre servizi di:",
+          "heading": "2. Servizi",
+          "body": "Offriamo:",
           "list": [
-            "**Web Design & Development:** Progettazione e sviluppo di siti web su misura.",
-            "**Branding:** Creazione di identità visive, loghi e brand guidelines.",
-            "**Digital Strategy:** Consulenza strategica, SEO e marketing digitale."
+            "**Siti web:** progettazione e sviluppo di siti vetrina e e-commerce.",
+            "**Brand identity:** logo, palette, tipografia e manuale d'uso.",
+            "**Strategia digitale:** piano dei canali, dei contenuti e delle metriche."
           ],
-          "footer": "I dettagli specifici di ogni progetto vengono definiti in un preventivo separato che costituisce parte integrante del contratto."
+          "footer": "Il preventivo definisce i dettagli di ogni progetto e fa parte del contratto."
         },
         {
-          "heading": "3. Pagamenti e Fatturazione",
-          "body": "Le condizioni di pagamento sono le seguenti:",
+          "heading": "3. Pagamenti e fatturazione",
+          "body": "Salvo diverso accordo nel preventivo:",
           "list": [
-            "**Acconto:** Il 50% dell'importo totale è richiesto all'inizio del progetto.",
-            "**Saldo:** Il restante 50% è dovuto alla consegna del progetto.",
-            "**Metodi:** Bonifico bancario, PayPal o carta di credito.",
-            "**Fatturazione:** Viene emessa fattura elettronica per ogni pagamento."
+            "**Acconto:** il 50% dell'importo all'inizio del progetto.",
+            "**Saldo:** il restante 50% alla consegna.",
+            "**Metodi:** bonifico bancario, PayPal o carta di credito.",
+            "**Fatturazione:** emettiamo fattura elettronica per ogni pagamento. I termini di pagamento sono indicati in fattura."
           ],
-          "footer": "I prezzi sono da intendersi IVA esclusa, salvo diversa indicazione."
+          "footer": "I prezzi sono IVA esclusa, salvo diversa indicazione."
         },
         {
-          "heading": "4. Revisioni e Modifiche",
-          "body": "Il preventivo include un numero specifico di revisioni (solitamente 2-3 round). Revisioni aggiuntive oltre quelle previste saranno quotate separatamente.",
-          "footer": "Modifiche sostanziali allo scope del progetto dopo l'approvazione iniziale potrebbero comportare costi aggiuntivi e variazioni nei tempi di consegna."
+          "heading": "4. Revisioni e modifiche",
+          "body": "Il preventivo include due round di revisioni sul design. Le revisioni in più le quotiamo a parte.",
+          "footer": "Modifiche sostanziali dopo l'approvazione possono cambiare costi e tempi di consegna."
         },
         {
-          "heading": "5. Proprietà Intellettuale",
-          "body": "**Prima del saldo finale:** Tutti i materiali prodotti rimangono di proprietà di Flow Digital Lab.",
-          "footer": "**Dopo il saldo finale:** Il cliente acquisisce la piena proprietà di tutti i deliverable concordati, inclusi file sorgente, grafiche e codice. Flow Digital Lab si riserva il diritto di utilizzare i lavori completati nel proprio portfolio, salvo accordi di riservatezza (NDA) specifici."
+          "heading": "5. Proprietà intellettuale",
+          "body": "**Prima del saldo:** i materiali prodotti restano di Flow Digital Lab.",
+          "footer": "**Dopo il saldo:** il cliente ottiene la piena proprietà dei deliverable concordati, inclusi file sorgente, grafiche e codice. Componenti di terzi e software open source restano sotto la loro licenza. Possiamo mostrare il lavoro nel nostro portfolio. Il nome e il logo del cliente compaiono solo con il suo consenso, salvo accordi di riservatezza (NDA)."
         },
         {
-          "heading": "6. Limitazione di Responsabilità",
-          "body": "Flow Digital Lab non è responsabile per:",
+          "heading": "6. Limitazione di responsabilità",
+          "body": "Flow Digital Lab non risponde di:",
           "list": [
-            "Danni indiretti, incidentali o consequenziali derivanti dall'uso dei nostri servizi.",
-            "Problemi causati da servizi di terze parti (hosting, dominio, ecc.).",
-            "Ritardi dovuti a mancata collaborazione o feedback tardivi del cliente."
+            "Danni indiretti o consequenziali derivanti dall'uso dei servizi.",
+            "Problemi dei servizi di terzi, come hosting e dominio.",
+            "Ritardi dovuti a feedback tardivi o mancata collaborazione del cliente."
           ],
-          "footer": "La nostra responsabilità massima è limitata all'importo totale pagato per il progetto."
+          "footer": "La responsabilità massima è limitata all'importo pagato per il progetto. Questa clausola compare anche nel preventivo e richiede la tua approvazione specifica per iscritto. Se sei un consumatore restano validi i diritti inderogabili del Codice del Consumo."
         },
         {
-          "heading": "7. Legge Applicabile",
-          "body": "I presenti Termini e Condizioni sono regolati dalla legge italiana. Per qualsiasi controversia sarà competente il Foro di competenza del domicilio di Flow Digital Lab.",
+          "heading": "7. Legge applicabile e foro",
+          "body": "Questi termini seguono la legge italiana. Per le controversie è competente il Foro di Bari. Se sei un consumatore è competente il foro del tuo domicilio.",
           "contactBox": true
         }
       ]
     },
     "contactBoxEmailLabel": "Email",
-    "contactBoxInstagramLabel": "Instagram"
+    "contactBoxInstagramLabel": "Instagram",
+    "cookie": {
+      "seoTitle": "Cookie Policy",
+      "title": "Cookie",
+      "titleAccent": "Policy",
+      "subtitle": "Questo sito non imposta cookie.",
+      "updated": "Ultimo aggiornamento: ottobre 2026",
+      "sections": [
+        {
+          "heading": "1. Cosa usiamo",
+          "body": "Il sito non imposta cookie. Salva una sola informazione nel tuo browser:",
+          "list": [
+            "**Preferenza di tema (localStorage):** ricorda il tema chiaro o scuro che scegli. Resta sul tuo dispositivo e non viene inviata a noi. La cancelli dalle impostazioni del browser."
+          ],
+          "footer": "È uno strumento tecnico legato a una tua scelta, quindi non serve il tuo consenso (art. 122 Codice Privacy)."
+        },
+        {
+          "heading": "2. Cosa non usiamo",
+          "body": "Non usiamo:",
+          "list": [
+            "Cookie di analisi o statistica.",
+            "Cookie di profilazione o pubblicità.",
+            "Pixel di social network.",
+            "Cookie di terze parti."
+          ],
+          "footer": "Se in futuro li aggiungeremo, ti chiederemo il consenso prima di attivarli e aggiorneremo questa pagina."
+        },
+        {
+          "heading": "3. Link ad altri servizi",
+          "body": "Il sito contiene link a WhatsApp, Instagram e GitHub. Se li clicchi lasci questo sito e valgono le informative di quei servizi, che possono usare propri cookie."
+        }
+      ]
+    }
   },
   "audit": {
     "heading": "Audit gratuito del tuo sito",

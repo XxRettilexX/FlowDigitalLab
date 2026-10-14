@@ -85,9 +85,10 @@ const Footer: React.FC<FooterProps> = () => {
                 <div className="footer-divider"></div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {currentYear} Flow Digital Lab. {t('rights')}</p>
+                    <p>&copy; {currentYear} Flow Digital Lab {t('owner')}. {t('rights')}</p>
                     <div className="footer-legal">
                         <Link href="/privacy">{t('privacy')}</Link>
+                        <Link href="/cookie">{t('cookie')}</Link>
                         <Link href="/terms">{t('terms')}</Link>
                     </div>
                 </div>

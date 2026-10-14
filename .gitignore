@@ -32,3 +32,11 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Local tooling
+.playwright-mcp/
+.vercel
+.claude/settings.local.json

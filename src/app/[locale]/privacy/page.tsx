@@ -61,8 +61,8 @@ export default async function PrivacyPage({ params }: PrivacyPageProps) {
                                 {section.footer && <p>{renderBold(section.footer)}</p>}
                                 {section.contactBox && (
                                     <div className="contact-box">
-                                        <p><strong>Flow Digital Lab</strong></p>
-                                        <p>{tLegal('contactBoxEmailLabel')}: <a href="mailto:privacy@flowdigitallab.it">privacy@flowdigitallab.it</a></p>
+                                        <p><strong>Vito Strisciuglio - Flow Digital Lab</strong></p>
+                                        <p>{tLegal('contactBoxEmailLabel')}: <a href="mailto:info@flowdigitallab.it">info@flowdigitallab.it</a></p>
                                         <p>{tLegal('contactBoxInstagramLabel')}: <a href="https://instagram.com/flow_digital.lab" target="_blank" rel="noopener noreferrer">@flow_digital.lab</a></p>
                                     </div>
                                 )}

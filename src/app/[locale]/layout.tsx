@@ -25,9 +25,6 @@ export const metadata: Metadata = {
         default: 'Flow Digital Lab',
         template: '%s | Flow Digital Lab',
     },
-    icons: {
-        icon: '/logo.svg',
-    },
 };
 
 const organizationJsonLd = {

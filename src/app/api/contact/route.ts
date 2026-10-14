@@ -69,7 +69,7 @@ export async function POST(request: Request) {
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 32px; background-color: #1A1612; color: #F4F1EA; border-radius: 10px;">
           <h1 style="color: #7FC4C0; margin: 0 0 24px;">Flow Digital Lab</h1>
           <p style="font-size: 16px; line-height: 1.6; color: #B5ADA0;">
-            Ciao ${escapeHtml(name)}, grazie per averci scritto! Il nostro team ti risponderà entro 24-48 ore lavorative.
+            Ciao ${escapeHtml(name)}, grazie per averci scritto! Ti rispondiamo entro 24 ore.
           </p>
         </div>
       `,

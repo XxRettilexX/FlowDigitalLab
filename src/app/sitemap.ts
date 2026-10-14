@@ -3,7 +3,7 @@ import { routing } from '@/i18n/routing';
 import { getAllPosts } from '@/lib/blog';
 import { SITE_URL } from '@/lib/seo';
 
-const STATIC_PATHS = ['', '/servizi', '/progetti', '/blog', '/contatti', '/privacy', '/terms'];
+const STATIC_PATHS = ['', '/servizi', '/progetti', '/blog', '/contatti', '/privacy', '/cookie', '/terms'];
 
 function entry(path: string, lastModified?: string): MetadataRoute.Sitemap {
     const languages = Object.fromEntries(routing.locales.map((l) => [l, `${SITE_URL}/${l}${path}`]));
